@@ -1,0 +1,24 @@
+{
+  "name": "epigoni",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizki-agyadata/Epigoni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizki-agyadata/Epigoni/issues"
+  },
+  "homepage": "https://github.com/rizki-agyadata/Epigoni#readme",
+  "dependencies": {
+    "vuepress": "^0.14.8"
+  }
+}
