@@ -1,7 +1,10 @@
 module.exports = {
     title: 'Epigoni',
     description: 'Epigoni Documentation Site',
-    themeConfig: {
+    head: [
+      ['link', { rel: 'icon', href: '/images/Epigoni.png' }]
+    ],
+    themeConfig: {      
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Guide', link: '/guide/' }
