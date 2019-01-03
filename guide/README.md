@@ -18,4 +18,3 @@ sebagai sebuah aplikasi.
 
 Epigoni dapat digunakan sebagai aplikasi front-end bagi berbagai sistem database. Developer pengguna Epigoni
 dapat dengan mudah membuat user interface untuk menampilkan dan memanipulasi data pada database.
-

@@ -13,10 +13,12 @@ module.exports = {
         { text: 'Home', link: '/' },
         { text: 'Guide', link: '/guide/' }
       ],
-      sidebar: [
-        '/',
-        '/guide/'
-      ]        
+      sidebar: {
+        '/guide/': [
+          '',
+          'arsitektur'
+        ]
+      }        
     }
     
   }
