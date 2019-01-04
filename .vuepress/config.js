@@ -16,7 +16,9 @@ module.exports = {
       sidebar: {
         '/guide/': [
           '',
-          'arsitektur'
+          'arsitektur',
+          'modelData',
+          'presentasi'
         ],
         // fallback
         '/': [
