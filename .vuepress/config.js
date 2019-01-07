@@ -18,7 +18,8 @@ module.exports = {
           '',
           'arsitektur',
           'modelData',
-          'presentasi'
+          'presentasi',
+          'membuatAplikasi'
         ],
         // fallback
         '/': [
