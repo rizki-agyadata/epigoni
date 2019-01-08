@@ -29,7 +29,7 @@ Data yang harus diisikan :
 ### Primary Database
 
 * *Database Type*, diisi dengan jenis RDBMS yang digunakan untuk menyimpan definisi aplikasi.
-* *Create New Database* (Yes/No), beri tanda cek untuk membuat *database* definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, *database* harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa database kosong.
+* ~~*Create New Database* (Yes/No), beri tanda cek untuk membuat *database* definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, *database* harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa database kosong.~~
 * *Database Metadata*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama *file database* yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.
 * *User Name*, diisi dengan nama *user* untuk *login* ke *database* definisi aplikasi yang akan terbentuk/sudah tersedia.
 * *Password*, diisi dengan *password* untuk ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
@@ -40,3 +40,5 @@ tombol Test Connection yang tersedia.
 ### Project
 
 * Project File Name, diisi dengan nama file project yang akan dibuat. Jika Anda menggunakan tombol Browse pada edit box Database Metadata, maka secara otomatis nama file project-nya akan terisi dengan nama dan lokasi yang sama dengan nama file database definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu .epf.
+
+Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni akan membuat file project dari aplikasi serta membentuk dan/atau menyiapkan database definisi aplikasi. Setelah selesai Epigoni akan membuka project tersebut dan menampilkan Application Info.
