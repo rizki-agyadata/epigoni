@@ -34,6 +34,9 @@ Data yang harus diisikan :
 * <span style="color:salmon"> *Host Name* </span>
 
 * *Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama *file database* yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.
+
+![Pop-Up Save As](/images/popUpSaveAs.svg)
+
 * *User Name*, diisi dengan nama *user* untuk *login* ke *database* definisi aplikasi yang akan terbentuk/sudah tersedia.
 * *Password*, diisi dengan *password* untuk ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
 
@@ -62,7 +65,7 @@ Lengkapi parameter dari koneksi seperlunya. Misal isi Database dengan nama datab
 
 ### Membuat Koneksi Database
 
-### Membuat Database (khusus untuk Firebird)
+### ~~Membuat Database (khusus untuk Firebird)~~
 
 ### Membuat Obyek-Obyek Database
 
