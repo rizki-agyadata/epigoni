@@ -39,6 +39,9 @@ Data yang harus diisikan :
 
 * *User Name*, diisi dengan nama *user* untuk *login* ke *database* definisi aplikasi yang akan terbentuk/sudah tersedia.
 * *Password*, diisi dengan *password* untuk ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
+* Tombol *Advanced* 
+
+![Advanced Parameters](/images/advancedParameters.svg)
 
 Jika *database* definisi aplikasi sudah tersedia, Anda bisa mencoba mengetes koneksi dengan menggunakan
 tombol Test Connection yang tersedia.
