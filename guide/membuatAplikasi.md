@@ -33,7 +33,9 @@ Data yang harus diisikan :
 * ~~*Create New Database* (Yes/No), beri tanda cek untuk membuat *database* definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, *database* harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa database kosong.~~
 * <span style="color:salmon"> *Host Name* </span>
 
-* *Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama *file database* yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.
+* ~~*Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama *file database* yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.~~
+
+* *Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.
 
 ![Pop-Up Save As](/images/popUpSaveAs.svg)
 
@@ -43,8 +45,10 @@ Data yang harus diisikan :
 
 ![Advanced Parameters](/images/advancedParameters.svg)
 
-Jika *database* definisi aplikasi sudah tersedia, Anda bisa mencoba mengetes koneksi dengan menggunakan
-tombol Test Connection yang tersedia.
+Jika *database* definisi aplikasi sudah tersedia, Anda bisa mencoba tes koneksi dengan menggunakan
+tombol *Test Connection* yang tersedia.
+
+![Tombol Test](/images/tombolTest.svg)
 
 ### Project
 
@@ -52,7 +56,7 @@ tombol Test Connection yang tersedia.
 
 ![epf](/images/projectEpf.svg)
 
-Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni akan membuat file project dari aplikasi serta membentuk dan/atau menyiapkan database definisi aplikasi. Setelah selesai Epigoni akan membuka project tersebut dan menampilkan Application Info.
+Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni akan membuat *file project* dari aplikasi serta membentuk dan/atau menyiapkan *database* definisi aplikasi. Setelah selesai Epigoni akan membuka *project* tersebut dan menampilkan **Application Info**.
 
 Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.
 
