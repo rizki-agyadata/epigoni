@@ -48,7 +48,9 @@ tombol Test Connection yang tersedia.
 
 ### Project
 
-* Project File Name, diisi dengan nama file project yang akan dibuat. Jika Anda menggunakan tombol Browse pada edit box Database Metadata, maka secara otomatis nama file project-nya akan terisi dengan nama dan lokasi yang sama dengan nama file database definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu .epf.
+* *Project File Name*, diisi dengan nama *file project* yang akan dibuat. Jika Anda menggunakan tombol *Browse* pada *edit box Database Metadata*, maka secara otomatis nama file *project*-nya akan terisi dengan nama dan lokasi yang sama dengan nama *file database* definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu **.epf**.
+
+![epf](/images/projectEpf.svg)
 
 Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni akan membuat file project dari aplikasi serta membentuk dan/atau menyiapkan database definisi aplikasi. Setelah selesai Epigoni akan membuka project tersebut dan menampilkan Application Info.
 
@@ -155,10 +157,78 @@ Disamping dengan cara diatas, untuk membuat Data Package dari Dataset yang telah
 
 ### Membuat Form
 
+Untuk melihat daftar definisi Form, pada tab Metadata, klik menu Form.
+
+Untuk membuat definisi form baru, klik tombol Add untuk menampilkan Form Editor.
+
 ### Membuat Report
+
+Untuk melihat daftar definisi Report, pada tab Metadata, klik menu Report.
+
+Untuk membuat definisi form baru, klik tombol Add untuk menampilkan Form Editor.
 
 ## Merancang Menu Aplikasi
 
 ### Membuat Action
 
+Pembuatan action ini nantinya akan dihubungkan ke menu pada aplikasi untuk bisa dijalankan.
+
+Untuk membuat Action ada 2 Cara, yaitu :
+
+Cara pertama :
+
+Jika Dataset yang akan dibuat action sudah dibuat maka pada daftar Dataset, pilih Dataset yang akan dibuat actionnya kemudian klik kanan, terus pilih Create Data Package, Form and Action.
+
+Cara kedua :
+
+Jika Data Package yang akan dibuat action sudah dibuat maka pada daftar Data Package, pilih Data Package yang akan dibuat actionnya kemudian klik kanan, terus pilih Create Form and Action.
+
+Action yang telah berhasil dibuat bisa dilihat didaftar Action
+
+Pada daftar Action ini dilengkapi dengan tombol Execute yang berfungsi untuk melihat hasil dari masing-masing Action yang ada didaftar Action
+
 ### Membuat Menu
+
+Untuk mendefinisikan menu pada aplikasi, Epigoni menyediakan beberapa jenis menu. Pada dasarnya menu aplikasi yang dibentuk ada dua tipe menu aplikasi yaitu menu berbasis ribbon dan menu tanpa ribbon.
+
+Epigoni menyediakan 4 buah jenis menu:
+
+Ribbon Menu. Bila ribbon menu ada isinya berarti aplikasi akan tampil dengan menu berbasis Ribbon. Ribbon terdiri atas minimal 3 level, yaitu Tab, Group dan Menu. Dua level pertama tidak dapat diisi dengan action, melainkan membentuk Tab dan Group. Level ke tiga dan selanjutnya (tidak terbatas) dapat diisi dengan action.
+
+Application Menu. Pada menu berbasis ribbon, application menu akan muncul sebagai application menu-nya ribbon. Pada menu tanpa ribbon, maka application menu akan menjadi Menu Bar utama dari aplikasi. Level tree Application menu tidak dibatasi.
+
+Tool Bar. Pada menu berbasis ribbon, menu akan tampil dalam Quick Access Toolbar. Pada menu tanpa ribbon, tool bar menu akan tampil sebagai Tool Bar di bawah Menu Bar. Level tree Tool Bar tidak dibatasi.
+
+Side Menu, adalah menu yang akan muncul disamping. Level tree Side Menu dibatasi minimal dan maksimal 2.
+
+#### Add
+
+Untuk menambahkan item menu yang sejajar (sibling).
+
+Data yang diisikan adalah Caption, Hint, Action, serta Image. Untuk memilih image gunakan klik-kanan.
+
+Bila Caption diisi dengan '-' , maka item menu akan menjadi separator.
+
+#### Add Child
+
+Untuk menambahkan item menu yang menjadi sub menu dari item menu yang dipilih.
+
+#### Edit
+
+Untuk mengubah item menu.
+
+#### Delete
+
+Untuk menghapus item menu.
+
+#### Up
+
+Untuk menggeser item menu ke atas dalam level yang sama.
+
+#### Down
+
+Untuk menggeser item menu ke bawah dalam level yang sama.
+
+
+
+
