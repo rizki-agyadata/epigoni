@@ -52,3 +52,73 @@ Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni aka
 ![Project EPF](/images/versi-1.2/projectIcon-V1.2.svg)
 
 Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.
+
+## Menyiapkan Database
+
+### Membuat Koneksi Database
+
+Sebelum membuat model data, Anda harus membuat koneksi ke database yang akan diakses oleh aplikasi. Sebuah proyek aplikasi Epigoni baru sudah memiliki satu buah koneksi database, yaitu koneksi ke database definisi aplikasi, bernama **DEFAULT**. Koneksi _DEFAULT_ tidak ada dalam daftar koneksi, tetapi dapat digunakan.
+
+Untuk melihat daftar koneksi _database_ yang ada, pada tab **Metadata**, klik tombol **Connection**.
+
+![DB Connections](/images/versi-1.2/dbConnections-V1.2.svg)
+
+Untuk menambahkan koneksi ke _database_ klik tombol **Add**. Beri nama koneksi pada _edit box_ **Connection Name**
+dan pilih **Connection Type** dengan jenis **RDBMS** dari _database_ yang ingin diakses.
+
+Lengkapi parameter dari koneksi seperlunya. Misal isi _Database_ dengan nama _database_ atau alias dari _database_ yang akan diakses, isi **User_Name** dan **Password** dengan nama _user_ dan _password_ untuk _login_ ke _database_ tersebut.
+
+Lakukan **test** koneksi dengan menekan tombol **Test Connection**, sebelum menekan tombol **OK**.
+
+Tombol **Edit** digunakan untuk mengedit koneksi jika Anda ingin melakukan perubahan.
+
+Tombol **Delete** digunakan untuk menghapus koneksi.
+
+### Membuat Database (khusus untuk Firebird)
+
+Epigoni menyediakan fasilitas untuk membuat _database_ **Firebird** dan sekaligus mendaftarkannya ke dalam daftar koneksi lewat tombol **Create Database**.
+
+![Create Firebird DB](/images/versi-1.2/createFirebirdDB-V1.2.svg)
+
+Isikan nama koneksi pada _edit box_ **Connection Name** dan nama _file database_ Firebird yang akan dibuat pada _edit box Database_. Pilih Page Size yang diinginkan. Isi **nama user** dan **password**. Klik tombol OK.
+
+### Membuat Obyek-Obyek Database
+
+Pembuatan obyek-obyek _database_ seperti membuat _table_, _trigger_, _stored procedure_ dll, dapat dilakukan dengan menggunakan _software_ alat bantu yang disediakan oleh masing-masing **RDBMS**. Epigoni sendiri akan dilengkapi dengan alat bantu untuk membuat obyek-obyek _database_ khusus untuk Firebird.
+
+## Membuat Model Data
+
+### Membuat Data Set
+
+Untuk melihat daftar definisi **Data Set**, pada tab **Metadata**, klik tombol **Dataset**.
+
+![Datasets](/images/versi-1.2/datasets-V1.2.svg)
+
+Untuk membuat definisi _data set_ baru, klik tombol **Add** untuk menampilkan _data set editor_.
+
+![Datasets](/images/versi-1.2/datasetEditor-V1.2.svg)
+
+Data yang diisikan:
+
+- **Dataset Name**, diisi dengan nama _dataset_.
+- **Dataset Title**, diisi dengan judul _dataset_.
+- **Connection**, diisi dengan koneksi _database_ yang akan diakses, dipilih dari daftar koneksi yang sudah dibuat.
+- **Command Type**, diisi degan memilih salah satu jenis **Command Type**:
+    - **Query**, _Command Text_ diisi dengan perintah **SQL Select**.
+    - **Table**, _Command Text_ diisi dengan nama _tabel_.
+    - **Stored Procedure**, _Command Text_ diisi dengan perintah _SQL Select_ yang mengandung _selectable stored procedure_.
+- **Update Mode**, diisi dengan memilih salah satu _mode update_:
+    - **Key Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari satu atau lebih _key field_ yang sebelumnya telah didefinisikan.
+    - **Change Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari _field-field_ yang diubah nilainya oleh _user_ (pengguna) aplikasi.
+    - **All Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal seluruh _field_ dari _data set_.
+    - **Read Only**, _data set_ tidak akan di-_update_.
+- **Update Table**, diisi dengan nama _tabel_ yang akan di-_update_ ketika data set di-_update_.
+- **Packed Records**, diisi dengan jumlah satuan _record_ yang akan di-_fetch_ dari _database_ ketika data dibutuhkan. Jika jumlahnya -1 maka semua _record_ akan di-_fetch_ seluruhnya. Jika nilainya >0 maka ketika dibutuhkan, data di-_fetch_ dengan satuan sebesar jumlah tersebut.
+- **Max Blob Size**, diisi dengan ukuran maksimal _field_ dengan tipe **BLOB** _(Binary Large Object)_ dalam satuan **KB**. Jika nilainya -1, maka tidak ada batasan ukuran.
+- **Fetch Blobs On Demand**, jika di cek, maka _field BLOB_ yang ada pada _data set_ tidak akan langsung di-_fetch_. _Field_ tersebut hanya akan di-_fetch_ jika diperlukan, misalnya ketika akan ditampilkan ke layar.
+- **Fetch Details On Demand**, jika di cek, maka jika _data set_ direlasikan dengan _data set_ lain dengan tipe relasi **Master-Detail**, data yang berasal dari _data set detail_ hanya akan di-_fetch_ ketika diperlukan.
+
+Ada definisi lain yang harus di-_set_ yang berada pada tab-tab bagian bawah editor.
+
+- **Command Text**, diisi sesuai dengan _Command Type_, seperti pada penjelasan di atas. Isi dari **Command Text** adalah inti dari definisi _data set_, mendeskripsikan data yang ingin dihasilkan. _Command Type_ umumnya adalah berupa _query_, jadi **Command Text** lebih sering identik dengan perintah **SQL Select**. Di sebelah kanan _editor Command Text_ terdapat alat bantu untuk membentuk SQL. Anda bisa mencoba men-_drag_ salah satu tabel yang terdapat pada daftar tabel ke editor Command Text.
+- **Field**, berisi daftar field yang dibentuk oleh Command Text. Daftar field harus dibentuk, baik secara manual satu demi satu atau secara otomatis lewat tombol Generate All Fields yang telah disediakan. Anda bisa mengeset attribut dari setiap field yang didefinisikan.
