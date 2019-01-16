@@ -19,7 +19,8 @@ module.exports = {
           'arsitektur',
           'modelData',
           'presentasi',
-          'membuatAplikasi'
+          'membuatAplikasi',
+          'membuatAplikasi-Versi-1.2'
         ],
         // fallback
         '/': [
