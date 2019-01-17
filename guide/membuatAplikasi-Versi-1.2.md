@@ -146,4 +146,32 @@ Tampilan _Run_
 
 Untuk melihat daftar definisi _Data Package_, pada tab **Metadata**, klik tombol **Data Package**.
 
-![Dataset Run](/images/versi-1.2/datapackage-V1.2.svg)
+![Datapackage](/images/versi-1.2/datapackage-V1.2.svg)
+
+Untuk membuat definisi Data Package baru, klik tombol **Add** untuk menampilkan Data Package _editor_.
+
+![Datapackage Editor](/images/versi-1.2/datapackageEditor-V1.2.svg)
+
+Disamping dengan cara di atas, untuk membuat Data Package dari Dataset yang telah dibuat, epigoni menyediakan juga cara yang lebih sederhana sebagai berikut:
+
+1. Masuk ke daftar definisi Dataset
+2. Sorot definisi Dataset yang akan dibuat definisi Data Package
+3. Klik kanan pada definisi Dataset yang akan dibuat definisi Data Package
+
+![Dataset To Datapackage](/images/versi-1.2/datasetToDatapackage3-V1.2.svg)
+
+4. Pilih salah satu menu yang muncul, misal: **Create Data Package**
+
+![Pilih Datapackage](/images/versi-1.2/pilihCreateDatapackage-V1.2.svg)
+
+5. Isikan nama untuk definisi Data Package yang sedang dibuat, tekan tombol OK
+
+![Isi Nama Datapackage](/images/versi-1.2/baseNameDatapackage-V1.2.svg)
+
+6. Proses membuat definisi Data Package sudah berhasil, tekan tombol OK
+
+![Informasi Done](/images/informasiDone.svg)
+
+7. Untuk hasilnya bisa dilihat di daftar definisi Data Package, pada tab Metadata, klik tombol Data Package.
+
+![Hasil Datapackage](/images/versi-1.2/hasilDatapackage-V1.2.svg)
