@@ -4,9 +4,9 @@
 
 Untuk membuat sebuah aplikasi pada Epigoni :
 
-- Dari tab *Builder*, Klik tombol *New Application*
+- Dari tab _Builder_, Klik tombol _New Application_
 
-Setelah tampil form dialog *Create New Application*, isi dengan informasi yang diperlukan. Proses ini akan membentuk sebuah *file project* Epigoni (*default*-nya berekstensi **.epf**). Proses ini juga akan membuat dan/atau menyiapkan *database* untuk definisi aplikasi.
+Setelah tampil form dialog _Create New Application_, isi dengan informasi yang diperlukan. Proses ini akan membentuk sebuah _file project_ Epigoni (_default_-nya berekstensi **.epf**). Proses ini juga akan membuat dan/atau menyiapkan _database_ untuk definisi aplikasi.
 
 ![Create New App](/images/versi-1.2/formCreateNewApp-V1.2.svg)
 
@@ -22,10 +22,11 @@ Data yang harus diisikan :
 ### User Management
 
 - _**User Management Type**_, diisi dengan salah satu pilihan yang tersedia:
-    - _**Simple**_, setiap *user* dapat didefinisikan hak akses-nya terhadap menu aplikasi Create New Database (Firebird Only) di Cek Klik disini untuk memberikan nama serta menyimpan file “Database Metadata” .
-    - _**Single Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap user dapat di-assign ke satu atau lebih role, tetapi pada saat login akan ditanya role mana yang akan digunakan.
-    - _**Fixed Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap userhanya dapat di-assign ke sebuah role saja.
-    - _**Mixed Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap user bisa di-assign ke satu atau lebih role. Hak akses user terhadap menu aplikasi adalah gabungandari hak akses semua role yang di-assign kepada user tersebut.
+
+  - _**Simple**_, setiap _user_ dapat didefinisikan hak akses-nya terhadap menu aplikasi Create New Database (Firebird Only) di Cek Klik disini untuk memberikan nama serta menyimpan file “Database Metadata” .
+  - _**Single Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap user dapat di-assign ke satu atau lebih role, tetapi pada saat login akan ditanya role mana yang akan digunakan.
+  - _**Fixed Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap userhanya dapat di-assign ke sebuah role saja.
+  - _**Mixed Role**_, setiap role dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap user bisa di-assign ke satu atau lebih role. Hak akses user terhadap menu aplikasi adalah gabungandari hak akses semua role yang di-assign kepada user tersebut.
 
 - _**Administrator Password**_, diisi dengan password untuk user ADMINISTRATOR. Ketikkan password tersebut dua kali sebagai konfirmasi. Password bersifat case-sensitive.
 
@@ -104,14 +105,14 @@ Data yang diisikan:
 - **Dataset Title**, diisi dengan judul _dataset_.
 - **Connection**, diisi dengan koneksi _database_ yang akan diakses, dipilih dari daftar koneksi yang sudah dibuat.
 - **Command Type**, diisi degan memilih salah satu jenis **Command Type**:
-    - **Query**, _Command Text_ diisi dengan perintah **SQL Select**.
-    - **Table**, _Command Text_ diisi dengan nama _tabel_.
-    - **Stored Procedure**, _Command Text_ diisi dengan perintah _SQL Select_ yang mengandung _selectable stored procedure_.
+  - **Query**, _Command Text_ diisi dengan perintah **SQL Select**.
+  - **Table**, _Command Text_ diisi dengan nama _tabel_.
+  - **Stored Procedure**, _Command Text_ diisi dengan perintah _SQL Select_ yang mengandung _selectable stored procedure_.
 - **Update Mode**, diisi dengan memilih salah satu _mode update_:
-    - **Key Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari satu atau lebih _key field_ yang sebelumnya telah didefinisikan.
-    - **Change Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari _field-field_ yang diubah nilainya oleh _user_ (pengguna) aplikasi.
-    - **All Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal seluruh _field_ dari _data set_.
-    - **Read Only**, _data set_ tidak akan di-_update_.
+  - **Key Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari satu atau lebih _key field_ yang sebelumnya telah didefinisikan.
+  - **Change Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal dari _field-field_ yang diubah nilainya oleh _user_ (pengguna) aplikasi.
+  - **All Fields**, _data set_ akan di-_update_ berdasarkan _value_ awal seluruh _field_ dari _data set_.
+  - **Read Only**, _data set_ tidak akan di-_update_.
 - **Update Table**, diisi dengan nama _tabel_ yang akan di-_update_ ketika data set di-_update_.
 - **Packed Records**, diisi dengan jumlah satuan _record_ yang akan di-_fetch_ dari _database_ ketika data dibutuhkan. Jika jumlahnya -1 maka semua _record_ akan di-_fetch_ seluruhnya. Jika nilainya >0 maka ketika dibutuhkan, data di-_fetch_ dengan satuan sebesar jumlah tersebut.
 - **Max Blob Size**, diisi dengan ukuran maksimal _field_ dengan tipe **BLOB** _(Binary Large Object)_ dalam satuan **KB**. Jika nilainya -1, maka tidak ada batasan ukuran.
@@ -287,3 +288,15 @@ Untuk menggeser item menu ke atas dalam level yang sama.
 Untuk menggeser item menu ke bawah dalam level yang sama.
 
 ![Down Menu](/images/versi-1.2/downMenu-V1.2.svg)
+
+## Mengatur User Pengguna Aplikasi
+
+### Role
+
+![Role](/images/versi-1.2/role-V1.2.svg)
+
+Fitur ini digunakan untuk mengelola Role. User dapat menambah, mengubah atau menghapus Role. Selain itu user dapat mendefinisikan hak atas setiap menu dari role yang dipilih. Untuk aplikasi dengan user management Simple Role, maka setiap penambahan dan penghapusan user, secara otomatis role dengan nama yang sama akan ditambahkan atau dihapuskan.
+
+Semua user bisa diubah atau dihapus, termasuk user dengan nama Administrator.
+
+![Role List](/images/versi-1.2/roleList-V1.2.svg)
