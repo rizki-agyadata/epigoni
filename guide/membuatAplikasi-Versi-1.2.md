@@ -175,3 +175,37 @@ Disamping dengan cara di atas, untuk membuat Data Package dari Dataset yang tela
 7. Untuk hasilnya bisa dilihat di daftar definisi Data Package, pada tab Metadata, klik tombol Data Package.
 
 ![Hasil Datapackage](/images/versi-1.2/hasilDatapackage-V1.2.svg)
+
+## Membuat Presentasi
+
+### Membuat Form
+
+Untuk melihat daftar definisi _Form_, pada tab _Metadata_, klik menu **Form**.
+
+![Daftar Form](/images/versi-1.2/daftarForm-V1.2.svg)
+
+Untuk membuat definisi _form_ baru, klik tombol **Add** untuk menampilkan **Form Editor**.
+
+![Add New Form](/images/versi-1.2/addNewForm-V1.2.svg)
+
+### Membuat Report
+
+Untuk melihat daftar definisi _Report_, pada tab _Metadata_, klik menu **Report**.
+
+![Daftar Report](/images/versi-1.2/daftarReport-V1.2.svg)
+
+Untuk membuat definisi _form_ baru, klik tombol **Add** untuk menampilkan **Form Editor**.
+
+![Add New Report](/images/versi-1.2/addNewReport-V1.2.svg)
+
+## Merancang Menu Aplikasi
+
+### Membuat Action
+
+Pembuatan action ini nantinya akan dihubungkan ke menu pada aplikasi untuk bisa dijalankan.
+
+Untuk membuat Action ada 2 Cara, yaitu :
+
+Cara pertama :
+
+Jika _Dataset_ yang akan dibuat action sudah dibuat maka pada daftar _Dataset_, pilih _Dataset_ yang akan dibuat actionnya kemudian klik kanan, terus pilih **Create Data Package, Form and Action**.
