@@ -209,3 +209,81 @@ Untuk membuat Action ada 2 Cara, yaitu :
 Cara pertama :
 
 Jika _Dataset_ yang akan dibuat action sudah dibuat maka pada daftar _Dataset_, pilih _Dataset_ yang akan dibuat actionnya kemudian klik kanan, terus pilih **Create Data Package, Form and Action**.
+
+![Create Action 1](/images/versi-1.2/createAction1-V1.2.svg)
+
+Cara kedua :
+
+Jika _Data Package_ yang akan dibuat _action_ sudah dibuat maka pada daftar _Data Package_, pilih **Data Package** yang akan dibuat actionnya kemudian klik kanan, terus pilih **Create Form and Action**.
+
+![Create Action 2](/images/versi-1.2/createAction2-V1.2.svg)
+
+_Action_ yang telah berhasil dibuat bisa dilihat pada daftar _Action_
+
+![Hasil Action](/images/versi-1.2/hasilAction-V1.2.svg)
+
+Pada daftar _Action_ ini dilengkapi dengan tombol **Execute** yang berfungsi untuk melihat hasil dari masing-masing _Action_ yang ada didaftar Action
+
+### Membuat Menu
+
+Untuk mendefinisikan menu pada aplikasi, Epigoni menyediakan beberapa jenis menu. Pada dasarnya menu aplikasi yang dibentuk ada dua tipe menu aplikasi yaitu menu berbasis ribbon dan menu tanpa ribbon. Epigoni menyediakan 4 buah jenis menu:
+
+**Ribbon Menu**. Bila _ribbon menu_ ada isinya berarti aplikasi akan tampil dengan menu berbasis _Ribbon_. _Ribbon_
+terdiri atas minimal 3 level, yaitu _Tab_, _Group_ dan _Menu_. Dua level pertama tidak dapat diisi dengan _action_,
+melainkan membentuk _Tab_ dan _Group_. Level ke tiga dan selanjutnya (tidak terbatas) dapat diisi dengan _action_.
+
+![Ribbon Menu](/images/versi-1.2/ribbonMenu-V1.2.svg)
+
+**Application Menu**. Pada menu berbasis _ribbon_, _application menu_ akan muncul sebagai _application menu_-nya
+_ribbon_. Pada menu tanpa _ribbon_, maka application menu akan menjadi _Menu Bar_ utama dari aplikasi. _Level tree Application menu_ tidak dibatasi.
+
+![Application Menu](/images/versi-1.2/applicationMenu-V1.2.svg)
+
+**Tool Bar**. Pada menu berbasis _ribbon_, menu akan tampil dalam _Quick Access Toolbar_. Pada menu tanpa _ribbon_,
+_tool bar menu_ akan tampil sebagai _Tool Bar_ di bawah _Menu Bar_. _Level tree Tool Bar_ tidak dibatasi.
+
+![Tool Bar Menu](/images/versi-1.2/toolBarMenu-V1.2.svg)
+
+**Side Menu**, adalah menu yang akan muncul disamping. _Level tree Side Menu_ dibatasi minimal dan maksimal 2.
+
+![Side Menu](/images/versi-1.2/sideMenu-V1.2.svg)
+
+**Add**
+
+Untuk menambahkan item menu yang sejajar (sibling).
+
+Data yang diisikan adalah _Caption_, _Hint_, _Action_, serta _Image_. Untuk memilih image gunakan klik-kanan.
+
+![Image Menu](/images/versi-1.2/imageMenu-V1.2.svg)
+
+Bila **Caption** diisi dengan **"-"** , maka item menu akan menjadi separator.
+
+![Strip Menu](/images/versi-1.2/stripMenu-V1.2.svg)
+
+![Separator Menu](/images/versi-1.2/separatorMenu-V1.2.svg)
+
+**Add Child**
+
+Untuk menambahkan item menu yang menjadi sub menu dari item menu yang dipilih.
+
+![Add Child Menu](/images/versi-1.2/addChildMenu-V1.2.svg)
+
+**Edit**
+
+Untuk mengubah item menu.
+
+**Delete**
+
+Untuk menghapus item menu.
+
+**Up**
+
+Untuk menggeser item menu ke atas dalam level yang sama.
+
+![Up Menu](/images/versi-1.2/upMenu-V1.2.svg)
+
+**Down**
+
+Untuk menggeser item menu ke bawah dalam level yang sama.
+
+![Down Menu](/images/versi-1.2/downMenu-V1.2.svg)
