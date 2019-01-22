@@ -300,3 +300,31 @@ Fitur ini digunakan untuk mengelola Role. User dapat menambah, mengubah atau men
 Semua user bisa diubah atau dihapus, termasuk user dengan nama Administrator.
 
 ![Role List](/images/versi-1.2/roleList-V1.2.svg)
+
+#### Add Role
+
+Menambahkan _role_ baru dan mengisi _property_ _Name_ dan _Status_ _(Active / Inactive)_
+
+![Form Role](/images/versi-1.2/formRole-V1.2.svg)
+
+#### Edit Role
+
+Mengubah _role_ dalam hal ini adalah _property_ _Name_ dan _Status_ _(Active / Inactive)_
+
+#### Delete Role
+
+Menghapus _Role_
+
+##### Menu
+
+Mengatur hak akses terhadap menu setiap _Role_.
+
+![Menu Role](/images/versi-1.2/menuRole-V1.2.svg)
+
+### User
+
+![Icon User](/images/versi-1.2/iconUser-V1.2.svg)
+
+Fitur ini digunakan untuk menambah, mengubah dan menghapus _user_.
+
+![User List](/images/versi-1.2/userList-V1.2.svg)
