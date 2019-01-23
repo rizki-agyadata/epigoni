@@ -328,3 +328,47 @@ Mengatur hak akses terhadap menu setiap _Role_.
 Fitur ini digunakan untuk menambah, mengubah dan menghapus _user_.
 
 ![User List](/images/versi-1.2/userList-V1.2.svg)
+
+#### Add
+
+Untuk menambahkan _user_ baru, dengan _property_ **User Name**, **Password**, **Full Name**, **Status** _(Active/Inactive)_.
+
+![Add User](/images/versi-1.2/addUser-V1.2.svg)
+
+#### Edit
+
+Untuk mengubah _user_, dengan _property_ **User Name**, **Password**, **Full Name**, **Status** _(Active/Inactive)_.
+
+#### Delete
+
+Untuk menghapus _user_.
+
+#### Role
+
+Untuk mendefinisikan _role_ apa saja yang di-_assign_-kan ke _user_ tersebut. Bila menggunakan _user management_ dengan tipe _fixed_, maka hanya ada satu _role_ yang bisa dipilih. Bila menggunakan _user management_ dengan tipe _simple_, maka hanya _role_ dengan nama yang sama dengan nama _user_ yang dipilih (tidak bisa diubah).
+
+![User Role](/images/versi-1.2/userRole-V1.2.svg)
+
+### Image Gallery
+
+_Image gallery_ digunakan untuk mengelola _image_. Sebuah _image_ dalam _image gallery_ bisa terdiri atas 3 buah gambar, masing-masing dengan _extension_ **bitmap**, **png**, **ico**.
+
+![Add Image](/images/versi-1.2/addImage-V1.2.svg)
+
+#### Add
+
+Untuk menambahkan sebuah image.
+
+#### Edit
+
+Untuk mengubah image.
+
+#### Delete
+
+Untuk menghapus image.
+
+#### Load Image
+
+Digunakan untuk menambahkan sebuah folder (tidak rekursif ke sub-sub foldernya) ke dalam _image gallery_. Secara otomatis gambar akan bertambah sesuai dengan nama dan tipenya. Bila gambar sudah ada maka akan muncul pertanyaan **skip**, **replace**, **skip all**, **replace all**, atau **cancel**.
+
+![Image Gallery](/images/versi-1.2/imageGallery-V1.2.svg)
