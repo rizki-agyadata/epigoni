@@ -372,3 +372,48 @@ Untuk menghapus image.
 Digunakan untuk menambahkan sebuah folder (tidak rekursif ke sub-sub foldernya) ke dalam _image gallery_. Secara otomatis gambar akan bertambah sesuai dengan nama dan tipenya. Bila gambar sudah ada maka akan muncul pertanyaan **skip**, **replace**, **skip all**, **replace all**, atau **cancel**.
 
 ![Image Gallery](/images/versi-1.2/imageGallery-V1.2.svg)
+
+### Membuat Lookup
+
+Lookup digunakan untuk mendefinisikan lookup
+
+#### Lookup Editor
+
+Ketika _user_ menambah atau mengubah _lookup_ maka akan ditampilkan _lookup editor_ yang didalamnya terdiri atas sejumlah _field_.
+
+- **Lookup Name**, nama lookup.
+- **Connection**, Koneksi yang digunakan.
+- **Lookup Type** (Standard, Custom Values, Dataset, Dataset Clone, DataView)
+    - **Standard** digunakan untuk mendefinisikan lookup dimana perintah sql didefinisikan disini. Command text akan berisi perintah SQL tersebut.
+    - **Custom Values** digunakan untuk mendefinisikan lookup yang didefinisikan sebagai daftar pasangan key dan value, dimana setiap pasangan akan dipisahkan dengan titik koma (;). Command text akan berisi pasangan tersebut. Contoh : 1=SATU;2=DUA. Dataset yang menggunakan custom values bisa bertipe integer atau numerik, selama isi  dari pasangan key dan value valid.
+    - **Dataset** digunakan untuk mendefinisikan lookup yang informasi query dan field-fieldnya berasal dari dataset tertentu. Dataset mana yang akan digunakan didefinisikan dalam Source Dataset
+    - **Dataset Clone** adalah definisi lookup dimana sumbernya adalah dataset lain dalam dataview yang sedang diedit (misalnya pada kasus master-detail). Dataset mana yang akan digunakan didefinisikan dalam Source Dataset. Bila menggunakan lookup jenis ini maka Source Dataset harus terdefinisi dalam DataView.
+    - **Dataview** adalah definisi lookup dimana sumbernya adalah dataview, sehingga bisa didefinisikan pencarian dll. Nama DataView ditulis dalam Source DataView.
+- **Key Fields** berisi daftar field yang akan menjadi key (di-copy nilainya dari lookup ke dalam dataset yang sedang di-edit). KeyFields bisa lebih dari 1.
+- **Display Fields** adalah field-field yang akan ditampilkan ketika dropdown list muncul. Display Fields bisa lebih dari 1.
+- **Display Index** adalah indeks dari Display Fields yang akan ditampilkan ketika dropdown list tidak muncul.
+- **Filter Fields** digunakan untuk melakukan filter lookup dari dataset yang diedit. Property ini berisi dafar field yang akan di-filter dan dipisahkan dengan titik koma (;). Jadi bila filter field diisi maka isi lookup akan di-filter dengan dari dataset yang diedit dengan nama yang sama.
+- **Description** digunakan untuk dokumentasi.
+
+#### Preview
+
+Lookup Preview digunakan untuk menampilkan data lookup.
+
+#### Add
+
+Digunakan untuk menambah lookup.
+
+#### Edit
+
+Digunakan untuk mengubah lookup
+
+#### Delete
+
+Digunakan untuk menghapus lookup
+
+## Bekerja Dengan Data Set
+
+Dataset akan menghasilkan recordset dari SQL Select atau dari store procedure (yang menghasilkan recordset). Dataset bisa updateable ke hanya satu dataset. Satu perintah SQL dalam satu dataset hanya dapat dilakukan terhadap satu database.
+
+
+
