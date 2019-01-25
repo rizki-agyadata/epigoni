@@ -413,7 +413,50 @@ Digunakan untuk menghapus lookup
 
 ## Bekerja Dengan Data Set
 
-Dataset akan menghasilkan recordset dari SQL Select atau dari store procedure (yang menghasilkan recordset). Dataset bisa updateable ke hanya satu dataset. Satu perintah SQL dalam satu dataset hanya dapat dilakukan terhadap satu database.
+Dataset akan menghasilkan _recordset_ dari _SQL Select_ atau dari _store procedure_ (yang menghasilkan _recordset_). Dataset bisa _updateable_ ke hanya satu _dataset_. Satu perintah SQL dalam satu _dataset_ hanya dapat dilakukan terhadap satu _database_.
 
+### Dataset Editor
 
+Dataset editor digunakan untuk mengedit _dataset_.
 
+- **Dataset Name**, merupakan nama _dataset_
+
+- **Dataset Title**, judul _(title)_ _dataset_ yang akan banyak digunakan dalam _user interface_.
+
+- **Connection**, adalah nama koneksi untuk _query_ dalam _dataset_
+
+- **Command Type**, untuk menentukan _Command Text_ akan digunakan sebagai apa.
+    - **Query** &rarr; _Command Text_ berisi perintah _Select SQL_
+    - **Table** &rarr; _Command Text_ berisi Nama Tabel
+    - **Store Procedure** &rarr; _Command Text_ berisi perintah untuk menjalankan _store procedure_, bagaimana perintahnya akan tergantung dalam RDBMS yang digunakan.
+
+- **Update Mode**, untuk menentukan cara melakukan _update_
+    - **All Fields** &rarr; Berarti seluruh _field_ akan dijadikan dasar pencarian untuk mengupdate (dalam bagian _where_ dari perintah _update_ yang dijalankan)
+    - **Changed Fields** &rarr; Berarti hanya _field_ yang berubah saja yang akan dijadikan dasar pencarian.
+    - **Key Fields** &rarr; Berarti hanya _field_ yang merupakan _key_ saja yang akan dijadikan dasar pencarian.
+
+- **Packed Record**, untuk menentukan jumlah _record_ yang di-_fetch_. Nilai **n** berarti ada **n** record yang akan di-_fetch_. Nilai **0** berarti tidak mengembalikan record Nilai **-1** berarti seluruh record akan diambil. Untuk jumlah **n > 0**, misalnya **10**, maka **10** _record_ akan di-_fetch_. Bila control (misalnya _Grid_) ternyata memerlukan **20** record pada saat pertama, maka secara otomatis **20** _record_ akan di-_fetch_. Dan selanjutnya bila control tersebut memerlukan _record_ berikutnya, maka secara otomatis _record_ berikutnya akan di-_fetch_.
+
+- **Max Blob Size**, digunakan untuk menentukan berapa ukuran maksimum _blob_ yang akan diambil. Bila **-1** maka berapapun besar _blob_ akan ditarik. Bila **n** maka _blob_ sebesar lebih dari **n** KB tidak akan diambil.
+
+- **Fetch Blobs On Demand**
+    - Bila **True**, maka _blob_ hanya akan di-_fetch_ ketika diperlukan saja. Pada saat record di-_fetch_, _blob_ belum diambil.
+
+- **Fetch Details On Demand**
+    - Bila **True**, maka data detail (dalam __dataset field__) akan diambil ketika diperlukan saja. Pada saat record di-_fetch_, _dataset field_ belum diambil.
+
+- **Command Text**, digunakan untuk mendefinisikan perintah sesuai definisi _Command Type_.
+
+- **Field Tab**, digunakan untuk menampilkan daftar _field_ yang ada
+
+- **Parameter Tab**, digunakan untuk menampilkan daftar _parameter_
+
+- **Index & Group Tab**, digunakan untuk menampilkan daftar _Index_ dan _Group_ untuk mengurutkan dan melakukan _grouping_ terhadap _dataset_.
+
+- **Aggregate Tab**, digunakan untuk menampilkan daftar _aggregate_, yaitu suatu nilai yang didapat dari seluruh _record_ dalam _dataset_ atau sebagian record sesuai _grouping_-nya.
+
+- **Constraint Tab**, digunakan untuk menampilkan daftar _Contraint_, yaitu suatu pembatasan nilai yang akan dimasukkan dalam _dataset_. _Constraint_ akan diperiksa persis sebelum _post_. Bila ada yang tidak sesuai maka _error message_ muncul dan _post_ akan dibatalkan.
+
+- **Description**, digunakan untuk dokumentasi dari _dataset_.
+
+### Field Tab
