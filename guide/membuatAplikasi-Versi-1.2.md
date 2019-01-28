@@ -385,10 +385,22 @@ Ketika _user_ menambah atau mengubah _lookup_ maka akan ditampilkan _lookup edit
 - **Connection**, Koneksi yang digunakan.
 - **Lookup Type** (Standard, Custom Values, Dataset, Dataset Clone, DataView)
     - **Standard** digunakan untuk mendefinisikan lookup dimana perintah sql didefinisikan disini. Command text akan berisi perintah SQL tersebut.
-    - **Custom Values** digunakan untuk mendefinisikan lookup yang didefinisikan sebagai daftar pasangan key dan value, dimana setiap pasangan akan dipisahkan dengan titik koma (;). Command text akan berisi pasangan tersebut. Contoh : 1=SATU;2=DUA. Dataset yang menggunakan custom values bisa bertipe integer atau numerik, selama isi  dari pasangan key dan value valid.
+
+    ![Lookup Standard](/images/versi-1.2/lookupStandard-V1.2.svg)
+
+    - **Custom Values** digunakan untuk mendefinisikan lookup yang didefinisikan sebagai daftar pasangan key dan value, dimana setiap pasangan akan dipisahkan dengan titik koma ";". Command text akan berisi pasangan tersebut. Contoh : 1=SATU;2=DUA. Dataset yang menggunakan custom values bisa bertipe integer atau numerik, selama isi  dari pasangan key dan value valid.
+
+    ![Lookup Custom Value](/images/versi-1.2/lookupCustomValue-V1.2.svg)
+
     - **Dataset** digunakan untuk mendefinisikan lookup yang informasi query dan field-fieldnya berasal dari dataset tertentu. Dataset mana yang akan digunakan didefinisikan dalam Source Dataset
+
+    ![Lookup Dataset](/images/versi-1.2/lookupDataset-V1.2.svg)
+
     - **Dataset Clone** adalah definisi lookup dimana sumbernya adalah dataset lain dalam dataview yang sedang diedit (misalnya pada kasus master-detail). Dataset mana yang akan digunakan didefinisikan dalam Source Dataset. Bila menggunakan lookup jenis ini maka Source Dataset harus terdefinisi dalam DataView.
     - **Dataview** adalah definisi lookup dimana sumbernya adalah dataview, sehingga bisa didefinisikan pencarian dll. Nama DataView ditulis dalam Source DataView.
+
+    ![Lookup Dataview](/images/versi-1.2/lookupDataview-V1.2.svg)
+
 - **Key Fields** berisi daftar field yang akan menjadi key (di-copy nilainya dari lookup ke dalam dataset yang sedang di-edit). KeyFields bisa lebih dari 1.
 - **Display Fields** adalah field-field yang akan ditampilkan ketika dropdown list muncul. Display Fields bisa lebih dari 1.
 - **Display Index** adalah indeks dari Display Fields yang akan ditampilkan ketika dropdown list tidak muncul.
@@ -398,6 +410,8 @@ Ketika _user_ menambah atau mengubah _lookup_ maka akan ditampilkan _lookup edit
 #### Preview
 
 Lookup Preview digunakan untuk menampilkan data lookup.
+
+![Lookup Preview](/images/versi-1.2/lookupPreview-V1.2.svg)
 
 #### Add
 
@@ -418,6 +432,8 @@ Dataset akan menghasilkan _recordset_ dari _SQL Select_ atau dari _store procedu
 ### Dataset Editor
 
 Dataset editor digunakan untuk mengedit _dataset_.
+
+![Dataset Editor](/images/versi-1.2/datasetEditor2-V1.2.svg)
 
 - **Dataset Name**, merupakan nama _dataset_
 
@@ -460,3 +476,19 @@ Dataset editor digunakan untuk mengedit _dataset_.
 - **Description**, digunakan untuk dokumentasi dari _dataset_.
 
 ### Field Tab
+
+![Field Tab](/images/versi-1.2/fieldTab-V1.2.svg)
+
+- **Add**, digunakan untuk menambahkan _field_
+
+- **Edit**, digunakan untuk mengedit _field_
+
+- **Delete**, digunakan untuk menghapus _field_
+
+- **Generate All Fields**, digunakan untuk menggenerate semua _field_ yang dihasilkan oleh perintah SQL dalam Command Text. Fungsi ini akan melakukan sinkronisasi, dimana _field-field_ yang ada tetap dipertahankan, _field_ yang tidak diperlukan akan dihapus dan _field_ yang belum ada akan ditambahkan.
+
+- **Remove All Fields**, digunakan untuk menghapus semua _field_ dalam daftar.
+
+- **Set Key Fields**, digunakan untuk mendefinisikan _key field_. Caranya dengan memilih beberapa _field_ dan menekan tombol ini. Semua _field_ yang dipilih akan menjadi _key field_ sedangkan field lainnya tidak.
+
+![Set Key Fields](/images/versi-1.2/setKeyFields-V1.2.svg)
