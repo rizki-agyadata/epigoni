@@ -510,6 +510,8 @@ Field Editor digunakan untuk mendefinisikan _field_.
 ![Field Editor](/images/versi-1.2/fieldEditor-V1.2.svg)
 
 - **Main**
+
+    ![Field Editor Main](/images/versi-1.2/fieldEditor-Main-V1.2.svg)
     - **Dataset**, digunakan untuk menampilkan _dataset_ yang merupakan induk dari _field_ tersebut (Display Only).
     - **Field Name**, nama _field_.
     - **Field Type**, tipe _data field_.
@@ -518,6 +520,8 @@ Field Editor digunakan untuk mendefinisikan _field_.
     - **Can Sort**. Bila _true_, berarti _field_ ini bisa di-_sort_.
     - **Can Filter**. Bila _true_, berarti _field_ ini bisa di-_filter_.
 - **Appearance**
+
+    ![Field Editor Appearance](/images/versi-1.2/fieldEditor-Appearance-V1.2.svg)
     - **Field Caption**, adalah judul _field_ dalam Grid.
     - **Hint**, digunakan untuk _hint_.
     - **Display Format**, digunakan untuk mendefinisikan _format_ tampilan.
@@ -526,6 +530,8 @@ Field Editor digunakan untuk mendefinisikan _field_.
     - **Alignment**, digunakan untuk menentukan _alignment_ data dalam komponen visual.
     - **Title Alignment**, digunakan untuk menentukan _alignment_ dalam Grid.
 - **Input Control**
+
+    ![Field Editor Input Control](/images/versi-1.2/fieldEditor-InputControl-V1.2.svg)
     - **Control Type**, digunakan untuk mendefinisikan jenis kontrol untuk input data. Default berarti input kontrol yang digunakan akan disesuaikan dengan tipe data.
     - **New Line**, untuk menentukan apakah control tersebut akan diletakkan di baris baru atau tidak.
     - **Category**, digunakan untuk mendefinisikan pengelompokan _field_ dalam _form entry_.
@@ -534,11 +540,13 @@ Field Editor digunakan untuk mendefinisikan _field_.
     - **Edit Format**, digunakan untuk mendefinisikan format tampilan data ketika data akan diinput.
     - **Edit Mask**, digunakan untuk _mask data_ pada saat data akan diinput. Lihat _mask_-nya Delphi.
     - **Char Case**, untuk mendefinisikan apakah karakter secara otomatis diubah menjadi huruf besar (UPPERCASE), atau huruf kecil (LOWERCASE) atau tanpa perubahan (DEFAULT).
-- **Enabled**
+- **Enabled**    
     - **Enabled on Browse**, berati pada saat _form entry/grid_ dalam mode _browse_ maka _field_ ini akan _disabled_ atau tidak.
     - **Enabled on Insert**, berarti pada saat _form entry/grid_ dalam mode _insert_ maka _field_ ini akan _disabled_ atau tidak.
     - **Enabled on Edit**, berarti pada saat _form entry/grid_ dalam mode _edit_ maka field ini akan _disabled_ atau tidak.
 - **Visible**
+
+    ![Field Editor Visible](/images/versi-1.2/fieldEditor-Visible-V1.2.svg)
     - **Visible on Browse**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _browse_.
     - **Visible on Insert**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _insert_.
     - **Visible on Edit**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _edit_.
@@ -546,21 +554,28 @@ Field Editor digunakan untuk mendefinisikan _field_.
     - **Can Modify**, berarti _field_ ini bisa diubah atau tidak (_read only_ atau tidak).
     - **Updateable**, berarti _field_ ini akan di-_update_ ke _database_ atau tidak.
     - **Key Field**, untuk mendefinisikan apakah _field_ ini _key_ atau tidak untuk proses _update_.
-- **Constraint** 
+- **Constraint**     
     Constraint digunakan untuk mendefinisikan pembatasan terhadap field di _level field_.
     - **Expression**, digunakan untuk mendefinisikan ekspresi yang akan membatasi _field_. 
     Ekspresi akan diperiksa pada saat fokus pindah dari _field_ ini.
     - **Error Message**, digunakan untuk mendefinisikan _message_ yang muncul bila _expression_ tidak dipenuhi.
+
+    ![Field Editor Visible](/images/versi-1.2/fieldEditor-ErrorMessage-V1.2.svg)
+
 - **Data Field**
     - **Lookup Source Type**, digunakan untuk mendefinisikan sumber _lookup_.
         - **None**, berarti _field_ ini tidak mengandung _lookup_.
         - **Lookup Definition**, berarti _lookup_ akan diambil dari definisi _lookup_.
         - **Custom Lookup value**, berarti _lookup_ akan dibentuk menggunakan daftar pasangan _key_ – _value_ yang dituliskan dalam _Lookup Values_
     - **Lookup Definition**, untuk menentukan definisi _lookup_ mana yang akan digunakan
+
+    ![Field Editor Lookup Definition](/images/versi-1.2/fieldEditor-LookupDefinition-V1.2.svg)
+
     - **Update Fields**, digunakan untuk mendefinisikan _field_ apa saja dalam _dataset_ yang di-_entry_ yang akan diisi dari _dataset lookup_. Bila kosong maka hanya _key field_ saja yang akan di-_update_. Bila diisi maka akan ada pasangan _field_ yang menunjukkan _field_ mana yang akan diisi dan _field_ mana yang akan mengisikannya.
     - **Lookup Cache**, digunakan untuk mendefinisikan apakah hasil _lookup_ akan di-_cache_ atau tidak. Cocok digunakan bila data dalam _lookup_ jarang berubah.
-    - **Lookup values**, digunakan bila tipe _lookup_ adalah _Custom Lookup value_, dan diisi dengan pasangan **key=value**, dimana setiap pasangan dipisahkan dengan titik koma (;).
+    - **Lookup values**, digunakan bila tipe _lookup_ adalah _Custom Lookup value_, dan diisi dengan pasangan **key=value**, dimana setiap pasangan dipisahkan dengan titik koma ";".
     - **Default Value Type**, digunakan untuk mendefinisikan tipe _default_
+    ![Field Editor DV](/images/versi-1.2/fieldEditor-DefaultValue-V1.2.svg)    
         - **NULL**, tanpa _default value_
         - **GENERATOR**, berarti nilai _default value_ akan diisi oleh suatu nilai unik dari _generator_ sistem.
         - **DATASET**, berarti _field_ ini akan diisi oleh nilai saat ini dari dataset yang disebutkan dan berada dalam __dataview__ dengan nama _field_ yang sama.
@@ -586,3 +601,74 @@ Field Editor digunakan untuk mendefinisikan _field_.
         - Berisi _script_ untuk _calculated field_
     - **Calculate Expression**
         - Berisi ekspresi untuk _calculated field_.   
+
+### Parameter Tab
+
+![Parameter Tab](/images/versi-1.2/parameterTab-V1.2.svg)
+
+- **Add**, digunakan untuk menambahkan _parameter_.
+- **Edit**, digunakan untuk mengubah _parameter_.
+- **Delete**, digunakan untuk menghapus _parameter_.
+- **Generate All Parameters**, digunakan untuk membentuk semua _parameter_ yang diperlukan.
+- **Remove All Parameters**, digunakan untuk menghapus semua _parameter_ yang ada.
+
+### Parameter Editor
+
+![Parameter Editor](/images/versi-1.2/parameterEditor-V1.2.svg)
+
+- **Parameter Name**, digunakan untuk mendefinisikan Nama Parameter.
+- **Data Type**, digunakan untuk mendefinisikan tipe data untuk parameter.
+- **Size**, digunakan untuk mendefinisikan ukuran parameter
+- **Precision**, digunakan untuk mendefinisikan berapa jumlah digit yang digunakan dalam parameter untuk parameter bertipe numerik.
+- **Numeric Scale**, digunakan untuk mendefinisikan berapa jumlah _digit_ di belakang koma yang digunakan dalam parameter yang bertipe numerik.
+- **Value**, Nilai parameter, hanya digunakan dalam Builder.
+
+### Index & Group
+Digunakan untuk mengurutkan dan mengelompokkan dataset.
+
+- Add, digunakan untuk menambah Index.
+- Edit, digunakan untuk mengubah Index.
+- Delete, digunakan untuk menghapus Index.
+- Free Grouping, digunakan untuk mendefinisikan apakah dataset tersebut memiliki free grouping dimana pada saat preview user dapat menyusun group-nya sendiri.
+- Set Default Dataset Index, digunakan untuk mendefinisikan bahwa index yang diselect akan menjadi default index.
+- Clear Default Dataset Index, digunakan untuk mengosongkan Default index.
+- Default Index, Tampilan yang menunjukkan index yang akan menjadi default index.
+- Index Editor, digunakan untuk mendefinisikan Index
+- Index Name, Nama Index
+- Index Title, Judul Index
+- Grouping Level, digunakan untuk mendefinisikan berapa tingkat grouping yang digunakan pada saat index tersebut aktif.
+- Field List, daftar field yang dimiliki oleh dataset sehingga bisa dengan mudah di-addkan ke dalam Index Field List.
+- Index Field List, daftar field yang digunakan dalam index
+- Up, digunakan untuk menggeser field ke atas
+- Down, digunakan untuk menggeser field ke bawah
+
+### Aggregate
+- Add, digunakan untuk menambah aggregate
+- Edit, digunakan untuk mengubah aggregate
+- Delete, digunakan untuk menghapus aggregate.
+- Aggregate Editor, User interface yang dapat digunakan untuk mengubah aggregate.
+- Aggregate Name
+- Apply To
+    - Summary, nilai aggreaget akan dihitung untuk seluruh record.
+    - Summary Group, nilai aggregate akan dihitung untuk group dalam index tertentu.
+    - Summary Default Group, nilai aggregate akan dihitung untuk group yang didefinisikan dengan menggunakan free grouping.
+- Dataset, Nilai aggregate akan dihitung untuk seluruh record dan tidak dimunculkan dalam grid.
+- Expression
+    - Field Name, mendefinisikan nama field yang akan dihitung dalam aggregate
+    - Aggregate Function, salah satu dari SUM, COUNT, MIN, MAX, AVG untu mendefinisikan function apa yang digunakan dalam menghitung nilai aggregate.
+    - Display Format, digunakan untuk mendefinisikan format tampilan dari aggregate
+    - Display Column, digunakan untuk mendefinisikan dimana letak aggregate akan ditampilkan dalam grid (dalam kolom yang mana).
+    - Expression, ekspresi aggregat yang digunakan untuk mendefinisikan aggregate dataset. Misalnya SUM(FIELD1*100)+30.
+    - Index Name, index Name hanya berfungsi untuk Summary Group dan Dataset yaitu index mana yang akan digunakan dalam aggregate.
+### Constraint
+Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam dataset. Constraint akan dieksekusi before post, bila gagal post akan dibatalkan.
+
+- Add, digunakan untuk menambahkan Constraint.
+- Edit, digunakan untuk mengubah Constraint.
+- Delete, digunakan untuk menghapus Constraint.
+
+### Constraint Editor
+- Constraint Name, Nama Constraint
+- Expression, Ekspresi untuk mendefinisikan Constraint.
+- Error Message, Message yang muncul ketika constraint gagal.
+
