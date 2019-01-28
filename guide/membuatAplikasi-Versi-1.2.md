@@ -768,11 +768,11 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 
         2. **Command**
 
-        Digunakan untuk mengeksekusi "Command". Misal Ada Command Untuk Menghapus Data dari Tabel X, ,aka button yg diisi Command ini jika diclick akanmengeksekusi command tsb, yakni menghapus Data dari Tabel X. Command bisa mempunyai parameter, yg akan diisi oleh DataSet atau Parameter dari DataView.
+        Digunakan untuk mengeksekusi "Command". Misal Ada Command Untuk Menghapus Data dari Tabel X, maka button yg diisi Command ini jika di-_click_ akanmengeksekusi command tsb, yakni menghapus Data dari Tabel X. Command bisa mempunyai parameter, yg akan diisi oleh DataSet atau Parameter dari DataView.
 
         3. **Script**
 
-        Button yg berisi script akan mengeksekusi script. Misal Script berisi 1 baris code, "ShowAppMessage('Hello Word!')"; Perhatikan apa yg terjadi jika button yg berisi script ini diclick.
+        Button yg berisi _script_ akan mengeksekusi _script_. Misal Script berisi 1 baris code, "ShowAppMessage('Hello Word!')"; Perhatikan apa yg terjadi jika button yg berisi script ini di-_click_.
 
         ![Form Script](/images/versi-1.2/formScript-V1.2.svg)
 
