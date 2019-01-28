@@ -624,51 +624,156 @@ Field Editor digunakan untuk mendefinisikan _field_.
 - **Value**, Nilai parameter, hanya digunakan dalam Builder.
 
 ### Index & Group
-Digunakan untuk mengurutkan dan mengelompokkan dataset.
+Digunakan untuk mengurutkan dan mengelompokkan **dataset**.
 
-- Add, digunakan untuk menambah Index.
-- Edit, digunakan untuk mengubah Index.
-- Delete, digunakan untuk menghapus Index.
-- Free Grouping, digunakan untuk mendefinisikan apakah dataset tersebut memiliki free grouping dimana pada saat preview user dapat menyusun group-nya sendiri.
-- Set Default Dataset Index, digunakan untuk mendefinisikan bahwa index yang diselect akan menjadi default index.
-- Clear Default Dataset Index, digunakan untuk mengosongkan Default index.
-- Default Index, Tampilan yang menunjukkan index yang akan menjadi default index.
-- Index Editor, digunakan untuk mendefinisikan Index
-- Index Name, Nama Index
-- Index Title, Judul Index
-- Grouping Level, digunakan untuk mendefinisikan berapa tingkat grouping yang digunakan pada saat index tersebut aktif.
-- Field List, daftar field yang dimiliki oleh dataset sehingga bisa dengan mudah di-addkan ke dalam Index Field List.
-- Index Field List, daftar field yang digunakan dalam index
-- Up, digunakan untuk menggeser field ke atas
-- Down, digunakan untuk menggeser field ke bawah
+- **Add**, digunakan untuk menambah Index.
+- **Edit**, digunakan untuk mengubah Index.
+- **Delete**, digunakan untuk menghapus Index.
+- **Free Grouping**, digunakan untuk mendefinisikan apakah dataset tersebut memiliki free grouping dimana pada saat preview user dapat menyusun group-nya sendiri.
+- **Set Default Dataset Index**, digunakan untuk mendefinisikan bahwa index yang diselect akan menjadi default index.
+- **Clear Default Dataset Index**, digunakan untuk mengosongkan Default index.
+- **Default Index**, Tampilan yang menunjukkan index yang akan menjadi default index.
+- **Index Editor**, digunakan untuk mendefinisikan Index
+- **Index Name**, Nama Index
+- **Index Title**, Judul Index
+- **Grouping Level**, digunakan untuk mendefinisikan berapa tingkat grouping yang digunakan pada saat index tersebut aktif.
+- **Field List**, daftar field yang dimiliki oleh dataset sehingga bisa dengan mudah di-addkan ke dalam Index Field List.
+- **Index Field List**, daftar field yang digunakan dalam index
+- **Up**, digunakan untuk menggeser field ke atas
+- **Down**, digunakan untuk menggeser field ke bawah
 
 ### Aggregate
-- Add, digunakan untuk menambah aggregate
-- Edit, digunakan untuk mengubah aggregate
-- Delete, digunakan untuk menghapus aggregate.
-- Aggregate Editor, User interface yang dapat digunakan untuk mengubah aggregate.
-- Aggregate Name
-- Apply To
-    - Summary, nilai aggreaget akan dihitung untuk seluruh record.
-    - Summary Group, nilai aggregate akan dihitung untuk group dalam index tertentu.
-    - Summary Default Group, nilai aggregate akan dihitung untuk group yang didefinisikan dengan menggunakan free grouping.
-- Dataset, Nilai aggregate akan dihitung untuk seluruh record dan tidak dimunculkan dalam grid.
-- Expression
-    - Field Name, mendefinisikan nama field yang akan dihitung dalam aggregate
-    - Aggregate Function, salah satu dari SUM, COUNT, MIN, MAX, AVG untu mendefinisikan function apa yang digunakan dalam menghitung nilai aggregate.
-    - Display Format, digunakan untuk mendefinisikan format tampilan dari aggregate
-    - Display Column, digunakan untuk mendefinisikan dimana letak aggregate akan ditampilkan dalam grid (dalam kolom yang mana).
-    - Expression, ekspresi aggregat yang digunakan untuk mendefinisikan aggregate dataset. Misalnya SUM(FIELD1*100)+30.
-    - Index Name, index Name hanya berfungsi untuk Summary Group dan Dataset yaitu index mana yang akan digunakan dalam aggregate.
+- **Add**, digunakan untuk menambah aggregate
+- **Edit**, digunakan untuk mengubah aggregate
+- **Delete**, digunakan untuk menghapus aggregate.
+- **Aggregate Editor**, User interface yang dapat digunakan untuk mengubah aggregate.
+- **Aggregate Name**
+- **Apply To**
+    - **Summary**, nilai aggreaget akan dihitung untuk seluruh record.
+    - **Summary Group**, nilai aggregate akan dihitung untuk group dalam index tertentu.
+    - **Summary Default Group**, nilai aggregate akan dihitung untuk group yang didefinisikan dengan menggunakan free grouping.
+- **Dataset**, Nilai aggregate akan dihitung untuk seluruh record dan tidak dimunculkan dalam grid.
+- **Expression**
+    - **Field Name**, mendefinisikan nama field yang akan dihitung dalam aggregate
+    - **Aggregate Function**, salah satu dari SUM, COUNT, MIN, MAX, AVG untu mendefinisikan function apa yang digunakan dalam menghitung nilai aggregate.
+    - **Display Format**, digunakan untuk mendefinisikan format tampilan dari aggregate
+    - **Display Column**, digunakan untuk mendefinisikan dimana letak aggregate akan ditampilkan dalam grid (dalam kolom yang mana).
+    - **Expression**, ekspresi aggregat yang digunakan untuk mendefinisikan aggregate dataset. Misalnya SUM(FIELD1*100)+30.
+    - **Index Name**, index Name hanya berfungsi untuk Summary Group dan Dataset yaitu index mana yang akan digunakan dalam aggregate.
+
 ### Constraint
 Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam dataset. Constraint akan dieksekusi before post, bila gagal post akan dibatalkan.
 
-- Add, digunakan untuk menambahkan Constraint.
-- Edit, digunakan untuk mengubah Constraint.
-- Delete, digunakan untuk menghapus Constraint.
+- **Add**, digunakan untuk menambahkan Constraint.
+- **Edit**, digunakan untuk mengubah Constraint.
+- **Delete**, digunakan untuk menghapus Constraint.
 
 ### Constraint Editor
-- Constraint Name, Nama Constraint
-- Expression, Ekspresi untuk mendefinisikan Constraint.
-- Error Message, Message yang muncul ketika constraint gagal.
+- **Constraint Name**, Nama Constraint
+- **Expression**, Ekspresi untuk mendefinisikan Constraint.
+- **Error Message**, Message yang muncul ketika constraint gagal.
 
+## Bekerja Dengan Data Package
+
+### DataView Editor
+
+![DataView Editor](/images/versi-1.2/dataViewEditor-V1.2.svg)
+
+- **Dataset**, Daftar Dataset yang ada dalam Dataview.
+    - **Add**, Untuk menambahkan Dataset
+    - **Remove**, Untuk membuang dataset dari dataview
+    - **Up**, Untuk menggeser dataset ke atas
+    - **Down**, Untuk menggeser dataset ke bawah
+    - **Edit Dataset**, Untuk memanggil Dataset Editor
+    - **Relation**, Untuk memanggil Relation Editor
+- **Relation Editor**, digunakan untuk menghubungkan dua buah dataset, dimana salah satu akan berperan sebagai master dataset yang lainnya akan berperan sebagai detail dataset. Apa yang harus dilakukan oleh master dataset dan detail dataset tergantung relation type.
+    - **Master Dataset**, Dataset yang berperan sebagai master.
+    - **Detail Dataset**, Dataset yang berperan sebagai detail.
+    - **Relation Type**, Tipe relasi yang akan menentukan peran master dan detail dataset.
+    - **Param Substitution**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jeins ini, mekanisme update dilakukan oleh masing-masing.
+    - **List Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, master tidak di-update, hanya detail yang di-update. Master bisa banyak tetapi detail tunggal untuk setiap master.
+    - **Master Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, detail akan menjadi bagian dari master yaitu sebagai dataset field. Master dan detail akan diupdate dalam satu transaction.
+    - **Link**, Link adalah daftar field yang menjadi penghubung antara master dengan detail.
+    - **Parameter Name**, Nama field yang merupakan parameter dari detail dataset
+    - **Source Field Name**, Nama field yang dimiliki oleh master dataset
+    - **Add**, Untuk menambahkan link
+    - **Delete**, Untuk menghapus link
+    - **Generate All Link**, Untuk menggenerate seluruh link dimana nama parameter dari detail dataset diketemukan dalam master dataset.
+    - **Remove All Link**, Digunakan untu menghapus semua link yang sudah didefinisikan.
+- **Open Parameter Tab**, Daftar Open Parameter yang didefinisikan untuk dataview tersebut. Untuk mengubah open parameter digunakan Open Parameter Editor yang tampilannya sangat mirip dengan Field Editor. Sort dan Filter tidak ada. Update, yaitu Can Modify Updateable, Keyaq Field tidak digunakan.
+    - **Add**
+    - **Edit**
+    - **Delete**
+- **Published Field**, Published field yang di-published keluar. Keguanaannya bisa berbagai macam, misalnya untuk lookup dengan tipe DataView, atau untuk input bagi DataView Lain.
+- **Published Field Tab**
+    - **Add**
+    - **Delete**
+    - **Generate All Fields**
+    - **Remove All Fields**
+- **Published Field Editor**
+    - **Dataset Name**, Nama dataset yang akan digunakan
+    - **Field Name**
+
+## Merancang Form
+
+### Form
+
+![Form](/images/versi-1.2/form-V1.2.svg)
+
+- **Add**, digunakan untuk menambahkan Form
+- **Edit**, digunakan untuk melakukan perubahan Form
+- **Delete**, digunakan untuk menghapus Form
+- **Design** , digunakan untuk merancang bagaimana sebuah form dipresentasikan.
+- **Preview**, digunakan untuk menampilkan Form
+- **Close**, digunakan untuk menutup jendela Form.
+
+![Form](/images/versi-1.2/formForm-V1.2.svg)
+
+### Desain
+
+![Form Desain](/images/versi-1.2/formDesign-V1.2.svg)
+
+![Form Desain 2](/images/versi-1.2/formDesign2-V1.2.svg)
+
+- **Form Header**
+    - **Form Title** , Pemberian Judul Form
+    - **Form Icon**, Untuk menampilkan icon pada Form
+
+    ![Form Header](/images/versi-1.2/formHeader-V1.2.svg)
+
+- **Form Footer**
+    - **Additional Buttons**
+
+        Untuk Menambahkan button pada form, caranya :
+
+        1. Pada Menu Form, Pilih Form yg akan ditambahkan button (dari grid daftar form yg ada).
+
+        2. Klik tombol "Design"
+
+        3. Lalu Klik tombol "Additional Buttons" (ada disebelah kiri tengah, pada kategori form footer)
+        
+        4. Klik tombol "Add" dan Isi Caption- nya. pilihan "From Left" jika dichek, akan membuat Button ditempatkan disebelah kiri, jika tidak button akan dittempatkan di sebelah kanan.
+
+        ![Form Footer](/images/versi-1.2/formFooter-Button-V1.2.svg)
+        
+        5. Pada Group "On Execute", pilih salah satu dari pilihan yg ada. Ada 5 pilihan yg tersedia : Action, Data Package Batch Process, Data Package Command, Data Package Methode dan Script.
+
+        Cara Penambahan Button Action Pada Form.
+
+        Button bisa diisi dengan 3 macam Action, yaitu : Action Standar, Batch Proses, Command, dan Script.
+
+        1. **Batch Proses**
+
+        Digunakan untuk proses insert atau update sejumlah data ke tabel. Dimana data yg akan diinsertkan tsb berasal dari suatu DataSet, dengan syarat nama-nama field di DataSet itu ada juga di Tabel (DataSet) tujuan.
+
+        2. **Command**
+
+        Digunakan untuk mengeksekusi "Command". Misal Ada Command Untuk Menghapus Data dari Tabel X, ,aka button yg diisi Command ini jika diclick akanmengeksekusi command tsb, yakni menghapus Data dari Tabel X. Command bisa mempunyai parameter, yg akan diisi oleh DataSet atau Parameter dari DataView.
+
+        3. **Script**
+
+        Button yg berisi script akan mengeksekusi script. Misal Script berisi 1 baris code, "ShowAppMessage('Hello Word!')"; Perhatikan apa yg terjadi jika button yg berisi script ini diclick.
+
+        ![Form Script](/images/versi-1.2/formScript-V1.2.svg)
+
+        ![Form Script](/images/versi-1.2/formScript2-V1.2.svg)
