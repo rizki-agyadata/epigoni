@@ -492,3 +492,97 @@ Dataset editor digunakan untuk mengedit _dataset_.
 - **Set Key Fields**, digunakan untuk mendefinisikan _key field_. Caranya dengan memilih beberapa _field_ dan menekan tombol ini. Semua _field_ yang dipilih akan menjadi _key field_ sedangkan field lainnya tidak.
 
 ![Set Key Fields](/images/versi-1.2/setKeyFields-V1.2.svg)
+
+- **Set Category**, digunakan untuk mengisi category untuk semua _field_ yang dipilih.
+
+- **Create Lookup Field**, digunakan untuk membuat _field_ baru sebagai lookup dengan _field_ yang dipilih menjadi _key_.
+
+- **Up**, digunakan untuk menggeser _field_ ke atas
+
+- **Down**, digunakan untuk menggeser _field_ ke bawah
+
+- **Reset Order**, digunakan untuk mengembalikan _dataset_ seperti urutan dalam _command text_.
+
+### Field Editor
+
+Field Editor digunakan untuk mendefinisikan _field_.
+
+![Field Editor](/images/versi-1.2/fieldEditor-V1.2.svg)
+
+- **Main**
+    - **Dataset**, digunakan untuk menampilkan _dataset_ yang merupakan induk dari _field_ tersebut (Display Only).
+    - **Field Name**, nama _field_.
+    - **Field Type**, tipe _data field_.
+    - **Field Size**, ukuran _field_.
+    - **Required**. Bila _true_, berarti _field_ ini harus diisi.
+    - **Can Sort**. Bila _true_, berarti _field_ ini bisa di-_sort_.
+    - **Can Filter**. Bila _true_, berarti _field_ ini bisa di-_filter_.
+- **Appearance**
+    - **Field Caption**, adalah judul _field_ dalam Grid.
+    - **Hint**, digunakan untuk _hint_.
+    - **Display Format**, digunakan untuk mendefinisikan _format_ tampilan.
+    - **Display Width**, digunakan untuk menentukan lebar tampilan dalam satuan karakter.
+    - **Display Height**, digunakan untuk menentukan tinggi tampilan dalam satuan _pixel_.
+    - **Alignment**, digunakan untuk menentukan _alignment_ data dalam komponen visual.
+    - **Title Alignment**, digunakan untuk menentukan _alignment_ dalam Grid.
+- **Input Control**
+    - **Control Type**, digunakan untuk mendefinisikan jenis kontrol untuk input data. Default berarti input kontrol yang digunakan akan disesuaikan dengan tipe data.
+    - **New Line**, untuk menentukan apakah control tersebut akan diletakkan di baris baru atau tidak.
+    - **Category**, digunakan untuk mendefinisikan pengelompokan _field_ dalam _form entry_.
+    - **Label Caption**, digunakan untuk mendefinisikan _caption_ yang muncul untuk _field_ ini dalam _form entry_.
+    - **Label Width**, digunakan untuk mendefinisikan lebar label. Nilai 0 berarti akan diatur oleh aplikasi.
+    - **Edit Format**, digunakan untuk mendefinisikan format tampilan data ketika data akan diinput.
+    - **Edit Mask**, digunakan untuk _mask data_ pada saat data akan diinput. Lihat _mask_-nya Delphi.
+    - **Char Case**, untuk mendefinisikan apakah karakter secara otomatis diubah menjadi huruf besar (UPPERCASE), atau huruf kecil (LOWERCASE) atau tanpa perubahan (DEFAULT).
+- **Enabled**
+    - **Enabled on Browse**, berati pada saat _form entry/grid_ dalam mode _browse_ maka _field_ ini akan _disabled_ atau tidak.
+    - **Enabled on Insert**, berarti pada saat _form entry/grid_ dalam mode _insert_ maka _field_ ini akan _disabled_ atau tidak.
+    - **Enabled on Edit**, berarti pada saat _form entry/grid_ dalam mode _edit_ maka field ini akan _disabled_ atau tidak.
+- **Visible**
+    - **Visible on Browse**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _browse_.
+    - **Visible on Insert**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _insert_.
+    - **Visible on Edit**, berarti _field_ ini akan dimunculkan atau tidak pada saat _form entry/grid_ dalam mode _edit_.
+- **Update**
+    - **Can Modify**, berarti _field_ ini bisa diubah atau tidak (_read only_ atau tidak).
+    - **Updateable**, berarti _field_ ini akan di-_update_ ke _database_ atau tidak.
+    - **Key Field**, untuk mendefinisikan apakah _field_ ini _key_ atau tidak untuk proses _update_.
+- **Constraint** 
+    Constraint digunakan untuk mendefinisikan pembatasan terhadap field di _level field_.
+    - **Expression**, digunakan untuk mendefinisikan ekspresi yang akan membatasi _field_. 
+    Ekspresi akan diperiksa pada saat fokus pindah dari _field_ ini.
+    - **Error Message**, digunakan untuk mendefinisikan _message_ yang muncul bila _expression_ tidak dipenuhi.
+- **Data Field**
+    - **Lookup Source Type**, digunakan untuk mendefinisikan sumber _lookup_.
+        - **None**, berarti _field_ ini tidak mengandung _lookup_.
+        - **Lookup Definition**, berarti _lookup_ akan diambil dari definisi _lookup_.
+        - **Custom Lookup value**, berarti _lookup_ akan dibentuk menggunakan daftar pasangan _key_ – _value_ yang dituliskan dalam _Lookup Values_
+    - **Lookup Definition**, untuk menentukan definisi _lookup_ mana yang akan digunakan
+    - **Update Fields**, digunakan untuk mendefinisikan _field_ apa saja dalam _dataset_ yang di-_entry_ yang akan diisi dari _dataset lookup_. Bila kosong maka hanya _key field_ saja yang akan di-_update_. Bila diisi maka akan ada pasangan _field_ yang menunjukkan _field_ mana yang akan diisi dan _field_ mana yang akan mengisikannya.
+    - **Lookup Cache**, digunakan untuk mendefinisikan apakah hasil _lookup_ akan di-_cache_ atau tidak. Cocok digunakan bila data dalam _lookup_ jarang berubah.
+    - **Lookup values**, digunakan bila tipe _lookup_ adalah _Custom Lookup value_, dan diisi dengan pasangan **key=value**, dimana setiap pasangan dipisahkan dengan titik koma (;).
+    - **Default Value Type**, digunakan untuk mendefinisikan tipe _default_
+        - **NULL**, tanpa _default value_
+        - **GENERATOR**, berarti nilai _default value_ akan diisi oleh suatu nilai unik dari _generator_ sistem.
+        - **DATASET**, berarti _field_ ini akan diisi oleh nilai saat ini dari dataset yang disebutkan dan berada dalam __dataview__ dengan nama _field_ yang sama.
+        - **SQLVALUE**, berarti _field_ ini akan diisi dengan nilai yang didefinisikan di SQL Value (Sebuah nilai tunggal dari SQL).
+        - **First Lookup Value**, berarti _field_ ini akan diisi oleh nilai pertama dari _lookup_ bila _field_ ini punya definisi _lookup_.
+        - **User Name**, _field_ ini akan diisi dengan nama _user name_ yang sedang _login_
+        - **Role Name**, _field_ ini akan diisi dengan nama _role_ dari user yang sedang _login_
+        - **Expression**, digunakan untuk mengisikan _field_ ini dengan suatu ekspresi sederhana.
+        - **Script**, digunakan untuk mendefinisikan _default value_ dalam bentuk _script_ kode.
+        - *Record No*, _field_ ini akan diisi dengan jumlah **record+1**.
+    - **Execute On**, digunakan untuk mendefinisikan kapan _default value_ akan dijalankan.
+        - **New**, pada saat _new record_
+        - **Update**, pada saat _update_.
+        - **New and Update**, pada _new record_ dan pada saat _update_
+    - **Dataset**, untuk mendefinisikan _dataset_ apa yang akan digunakan sebagai _lookup_
+    - **Default Value Expression**, digunakan untuk mendefinisikan ekspresi yang akan digunakan bila tipe _default value_ adalah _Expression_.
+- **Calculated Field**
+    - **Internal Calc**, bila _true_ maka _calculated field_ akan disimpan datanya dan dapat digunakan dalam _aggregate_. Bila _false_ _calculated field_ tidak akan disimpan datanya dan tidak dapat digunakan dalam _aggregate_, tetapi lebih cepat.
+    - **Calculated Type**
+        - **Script**, berarti _calculated_ yang dibuat akan menggunakan _script_
+        - **Expression**, berarti _calculated_ yang dibuat akan menggunakan _expression._
+    - **Calculate Script**
+        - Berisi _script_ untuk _calculated field_
+    - **Calculate Expression**
+        - Berisi ekspresi untuk _calculated field_.   
