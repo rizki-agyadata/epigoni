@@ -777,3 +777,64 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
         ![Form Script](/images/versi-1.2/formScript-V1.2.svg)
 
         ![Form Script](/images/versi-1.2/formScript2-V1.2.svg)
+
+## Merancang Report
+
+### Bekerja Dengan Report
+
+![Report](/images/versi-1.2/report-V1.2.svg)
+
+- **Add**, digunakan untuk menambah Report
+- **Edit**, digunakan untuk merubah Report
+- **Delete**, digunakan untuk menghapus Report
+
+![Report Def](/images/versi-1.2/reportDef-V1.2.svg)
+
+- **Report Name**, nama report yg di gunakan
+- **Report Title**, Judul (title) report yg digunakan
+- **Report Type**, Tipe Report yg di gunakan ada dua pilihan yaitu Simple Text Report dan Fast Report
+- **Data Package**, Dataview yg di gunakan
+- **Design**, digunakan untuk mendesain report.
+
+    ![Report Design](/images/versi-1.2/reportDesign-V1.2.svg)
+
+    Langkah-langkah untuk mendesain report.
+
+    - klik menu Report &rarr; Data atau melalui klik ganda Data Tab pada Data Tree
+    
+    ![Report Design 1](/images/versi-1.2/reportDesign_1-V1.2.svg)
+    
+    - Pilih Select Datasets
+
+    ![Report Design 2](/images/versi-1.2/reportDesign_2-V1.2.svg)
+
+    - Klik Insert Band kemudian pilih Page Header untuk memberikan judul pada halaman report
+
+    ![Report Design 3](/images/versi-1.2/reportDesign_3-V1.2.svg)
+
+    - Kemudian Insert Band lagi pilih Master Data
+
+    ![Report Design 4 1](/images/versi-1.2/reportDesign_4_1-V1.2.svg)
+
+    ![Report Design 4 2](/images/versi-1.2/reportDesign_4_2-V1.2.svg)
+
+    ![Report Design 4 3](/images/versi-1.2/reportDesign_4_3-V1.2.svg)
+
+    ![Report Design 4 4](/images/versi-1.2/reportDesign_4_4-V1.2.svg)
+
+    ![Report Design 4 5](/images/versi-1.2/reportDesign_4_5-V1.2.svg)
+
+    ![Report Design 4 6](/images/versi-1.2/reportDesign_4_6-V1.2.svg)
+
+    ![Report Design 4 7](/images/versi-1.2/reportDesign_4_7-V1.2.svg)
+
+## Running Aplikasi
+
+Aplikasi yang telah dibuat menggunakan epigoni dapat dijalankan melalui tombol Run Aplication yang terletak
+pada Tool Bar.
+
+![Run App](/images/versi-1.2/runApp-V1.2.svg)
+
+Form Aplikasi akan selalu ditampilkan setiap aplikasi dijalankan.
+
+![Login App](/images/versi-1.2/loginApp-V1.2.svg)
