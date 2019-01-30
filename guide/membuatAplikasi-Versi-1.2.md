@@ -33,10 +33,10 @@ Data yang harus diisikan :
 ### Metadata
 
 - _**Database Type**_, diisi dengan jenis RDBMS yang digunakan untuk menyimpan definisi aplikasi.
-- _**Create New Database (Yes/No)**_, beri tanda cek untuk membuat database definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, database harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa database kosong.
-- _**Database Metadata**_, nama database atau alias-nya yang akan digunakan sebagai dababase definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama file database yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol Browse sebelah kanan edit box untuk memudahkan pengisian nama file database.
-- _**User Name**_, diisi dengan nama user untuk login ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
-- _**Password**_, diisi dengan password untuk ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
+- _**Create New Database (Yes/No)**_, beri tanda cek untuk membuat _database_ definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, _database_ harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa _database_ kosong.
+- _**Database Metadata**_, nama _database_ atau alias-nya yang akan digunakan sebagai dababase definisi aplikasi. Pada Firebird, jika _database_ dibentuk oleh Epigoni, tuliskan nama file _database_ yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol Browse sebelah kanan edit box untuk memudahkan pengisian nama file database.
+- _**User Name**_, diisi dengan nama user untuk login ke _database_ definisi aplikasi yang akan terbentuk/sudah tersedia.
+- _**Password**_, diisi dengan password untuk ke _database_ definisi aplikasi yang akan terbentuk/sudah tersedia.
 
 Jika _database_ definisi aplikasi sudah tersedia, Anda bisa mencoba mengetes koneksi dengan menggunakan tombol **Test Connection** yang tersedia.
 
@@ -48,7 +48,7 @@ Jika _database_ definisi aplikasi sudah tersedia, Anda bisa mencoba mengetes kon
 
 ![Project EPF](/images/versi-1.2/projectEpf-V1.2.svg)
 
-Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni akan membuat file project dari aplikasi serta membentuk dan/atau menyiapkan database definisi aplikasi. Setelah selesai Epigoni akan membuka project tersebut dan menampilkan Application Info.
+Setelah semua informasi yang diperlukan telah diisi, klik tombol OK. Epigoni akan membuat _file project_ dari aplikasi serta membentuk dan/atau menyiapkan _database_ definisi aplikasi. Setelah selesai Epigoni akan membuka project tersebut dan menampilkan Application Info.
 
 ![Project EPF](/images/versi-1.2/projectIcon-V1.2.svg)
 
@@ -58,7 +58,7 @@ Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian ap
 
 ### Membuat Koneksi Database
 
-Sebelum membuat model data, Anda harus membuat koneksi ke database yang akan diakses oleh aplikasi. Sebuah proyek aplikasi Epigoni baru sudah memiliki satu buah koneksi database, yaitu koneksi ke database definisi aplikasi, bernama **DEFAULT**. Koneksi _DEFAULT_ tidak ada dalam daftar koneksi, tetapi dapat digunakan.
+Sebelum membuat model data, Anda harus membuat koneksi ke _database_ yang akan diakses oleh aplikasi. Sebuah proyek aplikasi Epigoni baru sudah memiliki satu buah koneksi _database_, yaitu koneksi ke _database_ definisi aplikasi, bernama **DEFAULT**. Koneksi _DEFAULT_ tidak ada dalam daftar koneksi, tetapi dapat digunakan.
 
 Untuk melihat daftar koneksi _database_ yang ada, pada tab **Metadata**, klik tombol **Connection**.
 
@@ -691,27 +691,27 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
     - **Detail Dataset**, Dataset yang berperan sebagai detail.
     - **Relation Type**, Tipe relasi yang akan menentukan peran master dan detail dataset.
     - **Param Substitution**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jeins ini, mekanisme update dilakukan oleh masing-masing.
-    - **List Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, master tidak di-update, hanya detail yang di-update. Master bisa banyak tetapi detail tunggal untuk setiap master.
-    - **Master Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, detail akan menjadi bagian dari master yaitu sebagai dataset field. Master dan detail akan diupdate dalam satu transaction.
-    - **Link**, Link adalah daftar field yang menjadi penghubung antara master dengan detail.
-    - **Parameter Name**, Nama field yang merupakan parameter dari detail dataset
-    - **Source Field Name**, Nama field yang dimiliki oleh master dataset
-    - **Add**, Untuk menambahkan link
-    - **Delete**, Untuk menghapus link
-    - **Generate All Link**, Untuk menggenerate seluruh link dimana nama parameter dari detail dataset diketemukan dalam master dataset.
+    - **List Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, master tidak di-_update_, hanya detail yang di-_update_. Master bisa banyak tetapi detail tunggal untuk setiap master.
+    - **Master Detail**, Detail dataset akan memiliki parameter yang disuplai dari master dataset. Dalam relasi jenis ini, detail akan menjadi bagian dari master yaitu sebagai _dataset field_. Master dan detail akan di-_update_ dalam satu _transaction_.
+    - **Link**, Link adalah daftar _field_ yang menjadi penghubung antara _master_ dengan _detail_.
+    - **Parameter Name**, Nama field yang merupakan parameter dari _detail dataset_
+    - **Source Field Name**, Nama field yang dimiliki oleh _master dataset_
+    - **Add**, Untuk menambahkan _link_
+    - **Delete**, Untuk menghapus _link_
+    - **Generate All Link**, Untuk menggenerate seluruh _link_ dimana nama parameter dari detail dataset diketemukan dalam _master dataset_.
     - **Remove All Link**, Digunakan untu menghapus semua link yang sudah didefinisikan.
-- **Open Parameter Tab**, Daftar Open Parameter yang didefinisikan untuk dataview tersebut. Untuk mengubah open parameter digunakan Open Parameter Editor yang tampilannya sangat mirip dengan Field Editor. Sort dan Filter tidak ada. Update, yaitu Can Modify Updateable, Keyaq Field tidak digunakan.
+- **Open Parameter Tab**, Daftar Open Parameter yang didefinisikan untuk _dataview_ tersebut. Untuk mengubah _open parameter_ digunakan Open Parameter Editor yang tampilannya sangat mirip dengan Field Editor. Sort dan Filter tidak ada. Update, yaitu Can Modify Updateable, Keyaq Field tidak digunakan.
     - **Add**
     - **Edit**
     - **Delete**
-- **Published Field**, Published field yang di-published keluar. Keguanaannya bisa berbagai macam, misalnya untuk lookup dengan tipe DataView, atau untuk input bagi DataView Lain.
+- **Published Field**, _published field_ yang di-_published_ keluar. Keguanaannya bisa berbagai macam, misalnya untuk _lookup_ dengan tipe DataView, atau untuk input bagi DataView Lain.
 - **Published Field Tab**
     - **Add**
     - **Delete**
     - **Generate All Fields**
     - **Remove All Fields**
 - **Published Field Editor**
-    - **Dataset Name**, Nama dataset yang akan digunakan
+    - **Dataset Name**, Nama _dataset_ yang akan digunakan
     - **Field Name**
 
 ## Merancang Form
@@ -744,7 +744,7 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 - **Form Footer**
     - **Additional Buttons**
 
-        Untuk Menambahkan button pada form, caranya :
+        Untuk Menambahkan _button_ pada form, caranya :
 
         1. Pada Menu Form, Pilih Form yg akan ditambahkan button (dari grid daftar form yg ada).
 
@@ -752,7 +752,7 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 
         3. Lalu Klik tombol "Additional Buttons" (ada disebelah kiri tengah, pada kategori form footer)
         
-        4. Klik tombol "Add" dan Isi Caption- nya. pilihan "From Left" jika dichek, akan membuat Button ditempatkan disebelah kiri, jika tidak button akan dittempatkan di sebelah kanan.
+        4. Klik tombol "Add" dan Isi Caption- nya. pilihan "From Left" jika di-_chek_, akan membuat Button ditempatkan disebelah kiri, jika tidak _button_ akan ditempatkan di sebelah kanan.
 
         ![Form Footer](/images/versi-1.2/formFooter-Button-V1.2.svg)
         
@@ -768,11 +768,11 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 
         2. **Command**
 
-        Digunakan untuk mengeksekusi "Command". Misal Ada Command Untuk Menghapus Data dari Tabel X, maka button yg diisi Command ini jika di-_click_ akanmengeksekusi command tsb, yakni menghapus Data dari Tabel X. Command bisa mempunyai parameter, yg akan diisi oleh DataSet atau Parameter dari DataView.
+        Digunakan untuk mengeksekusi "Command". Misal Ada Command Untuk Menghapus Data dari Tabel X, maka _button_ yg diisi Command ini jika di-_click_ akanmengeksekusi _command_ tsb, yakni menghapus Data dari Tabel X. Command bisa mempunyai parameter, yg akan diisi oleh DataSet atau Parameter dari DataView.
 
         3. **Script**
 
-        Button yg berisi _script_ akan mengeksekusi _script_. Misal Script berisi 1 baris code, "ShowAppMessage('Hello Word!')"; Perhatikan apa yg terjadi jika button yg berisi script ini di-_click_.
+        Button yg berisi _script_ akan mengeksekusi _script_. Misal Script berisi 1 baris _code_, **"ShowAppMessage('Hello Word!')";** Perhatikan apa yg terjadi jika button yg berisi script ini di-_click_.
 
         ![Form Script](/images/versi-1.2/formScript-V1.2.svg)
 
@@ -790,29 +790,29 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 
 ![Report Def](/images/versi-1.2/reportDef-V1.2.svg)
 
-- **Report Name**, nama report yg di gunakan
-- **Report Title**, Judul (title) report yg digunakan
-- **Report Type**, Tipe Report yg di gunakan ada dua pilihan yaitu Simple Text Report dan Fast Report
+- **Report Name**, nama _report_ yg di gunakan
+- **Report Title**, Judul (title) _report_ yg digunakan
+- **Report Type**, Tipe Report yg di gunakan ada dua pilihan yaitu **Simple Text Report** dan **Fast Report**
 - **Data Package**, Dataview yg di gunakan
-- **Design**, digunakan untuk mendesain report.
+- **Design**, digunakan untuk mendesain _report_.
 
     ![Report Design](/images/versi-1.2/reportDesign-V1.2.svg)
 
-    Langkah-langkah untuk mendesain report.
+    Langkah-langkah untuk mendesain _report_.
 
-    - klik menu Report &rarr; Data atau melalui klik ganda Data Tab pada Data Tree
+    - klik menu **Report** &rarr; **Data** atau melalui klik ganda Data Tab pada **Data Tree**
     
     ![Report Design 1](/images/versi-1.2/reportDesign_1-V1.2.svg)
     
-    - Pilih Select Datasets
+    - Pilih **Select Datasets**
 
     ![Report Design 2](/images/versi-1.2/reportDesign_2-V1.2.svg)
 
-    - Klik Insert Band kemudian pilih Page Header untuk memberikan judul pada halaman report
+    - Klik **Insert Band** kemudian pilih **Page Header** untuk memberikan judul pada halaman _report_
 
     ![Report Design 3](/images/versi-1.2/reportDesign_3-V1.2.svg)
 
-    - Kemudian Insert Band lagi pilih Master Data
+    - Kemudian **Insert Band** lagi pilih **Master Data**
 
     ![Report Design 4 1](/images/versi-1.2/reportDesign_4_1-V1.2.svg)
 
@@ -830,8 +830,8 @@ Constraint digunakan untuk mendefinisikan batasan untuk suatu record dalam datas
 
 ## Running Aplikasi
 
-Aplikasi yang telah dibuat menggunakan epigoni dapat dijalankan melalui tombol Run Aplication yang terletak
-pada Tool Bar.
+Aplikasi yang telah dibuat menggunakan Epigoni dapat dijalankan melalui tombol **Run Aplication** yang terletak
+pada **Tool Bar**.
 
 ![Run App](/images/versi-1.2/runApp-V1.2.svg)
 
