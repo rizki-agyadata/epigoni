@@ -58,11 +58,13 @@ Jika tes koneksi berhasil, maka akan muncul dialog seperti berikut.
 
 ### Project
 
-- _Project File Name_, diisi dengan nama _file project_ yang akan dibuat. Jika Anda menggunakan tombol _Browse_ pada _edit box Database (Metadata)_, maka secara otomatis nama file _project_-nya akan terisi dengan nama dan lokasi yang sama dengan nama _file database_ definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu **.epf**.
+- _Project File Name_, diisi dengan nama _file project_ yang akan dibuat. Jika Anda menggunakan tombol _Browse_ pada _edit box Database (metadata)_, maka secara otomatis nama file _project_-nya akan terisi dengan nama dan lokasi yang sama dengan nama _file database_ definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu **.epf**.
 
 ![epf](/images/projectEpf.svg)
 
-Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni akan membuat _file project_ dari aplikasi serta membentuk dan/atau menyiapkan _database_ definisi aplikasi. Setelah selesai Epigoni akan membuka _project_ tersebut dan menampilkan **Application Info**.
+Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni akan membuat _file project_ dari aplikasi serta membentuk _database_ definisi aplikasi. Setelah selesai, akan tampil aplikasi yang telah dibuat pada **Epigoni Application Portal**, seperti gambar berikut.
+
+![List App.](/images/listApp.svg)
 
 Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.
 
