@@ -1,12 +1,12 @@
 # Membuat Aplikasi
 
-> **Catatan**: Dokumentasi **Epigoni** versi terbaru masih dalam proses pengerjaan. Untuk **Epigoni versi 1.2** lihat di halam [berikut](/guide/membuatAplikasi-Versi-1.2.md). 
+> **Catatan**: Dokumentasi **Epigoni** versi terbaru masih dalam proses pengerjaan. Untuk **Epigoni versi 1.2** lihat di halam [berikut](/guide/membuatAplikasi-Versi-1.2.md).
 
 ## Membuat Aplikasi Baru
 
 ![Tombol Create New App](/images/tombolCreateNewApp.svg)
 
-Setelah tampil form dialog **Create New Application**, isi dengan informasi yang diperlukan. Proses ini akan membentuk sebuah *file project* Epigoni (*default*-nya berekstensi **.epf**). Proses ini juga akan membuat dan/atau menyiapkan *database* untuk definisi aplikasi.
+Setelah tampil form dialog **Create New Application**, isi dengan informasi yang diperlukan. Proses ini akan membentuk sebuah _file project_ Epigoni (_default_-nya berekstensi **.epf**). Proses ini juga akan membuat dan/atau menyiapkan _database_ untuk definisi aplikasi.
 
 ![Form Create New App](/images/formCreateNewApp.svg)
 
@@ -14,51 +14,55 @@ Data yang harus diisikan :
 
 ### Application
 
-- *Application ID*, diisi dengan kode aplikasi.
-- *Description*, diisi dengan deskripsi aplikasi, akan tampil sebagai *caption* dari *window* utama aplikasi.
-- *Title*, diisi dengan judul aplikasi, akan tampil pada *form login* aplikasi.
-- *Sub Title*, diisi dengan sub judul aplikasi, akan tampil pada *form login* aplikasi sebagai sub judul.
+- _Application ID_, diisi dengan kode aplikasi.
+- _Description_, diisi dengan deskripsi aplikasi, akan tampil sebagai _caption_ dari _window_ utama aplikasi.
+- _Title_, diisi dengan judul aplikasi, akan tampil pada _form login_ aplikasi.
+- _Sub Title_, diisi dengan sub judul aplikasi, akan tampil pada _form login_ aplikasi sebagai sub judul.
 
 ### User Management
 
-* *User Management Type*,  diisi dengan salah satu pilihan yang tersedia:
-    - *Simple*, setiap *user* dapat didefinisikan hak akses-nya terhadap menu aplikasi
-    - *Single Role*, setiap *role* dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap *user* dapat di-assign ke satu atau lebih *role*, tetapi pada saat login akan ditanya role mana yang akan digunakan.
-    - *Fixed Role*, setiap *role* dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap *user* hanya dapat di-assign ke sebuah *role* saja.
-    - *Mixed Role*, setiap *role* dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap *user* bisa di-assign ke satu atau lebih *role*. Hak akses user terhadap menu aplikasi adalah gabungan dari hak akses semua *role* yang di-*assign* kepada *user* tersebut.
-* *Administrator Password*, diisi dengan *password* untuk *user ADMINISTRATOR*. Ketikkan *password* tersebut dua kali sebagai konfirmasi. *Password* bersifat *case-sensitive*.
-* *Developer Password*, diisi dengna *password* untuk *user DEVELOPER*. Ketikkan *password* tersebut dua kali sebagai konfirmasi. *Password* bersifat *case-sensitive*.
+- _User Management Type_, diisi dengan salah satu pilihan yang tersedia:
+  - _Simple_, setiap _user_ dapat didefinisikan hak akses-nya terhadap menu aplikasi
+  - _Single Role_, setiap _role_ dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap _user_ dapat di-assign ke satu atau lebih _role_, tetapi pada saat login akan ditanya role mana yang akan digunakan.
+  - _Fixed Role_, setiap _role_ dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap _user_ hanya dapat di-assign ke sebuah _role_ saja.
+  - _Mixed Role_, setiap _role_ dapat didefinisikan hak akses-nya terhadap menu aplikasi. Setiap _user_ bisa di-assign ke satu atau lebih _role_. Hak akses user terhadap menu aplikasi adalah gabungan dari hak akses semua _role_ yang di-_assign_ kepada _user_ tersebut.
+- _Administrator Password_, diisi dengan _password_ untuk _user ADMINISTRATOR_. Ketikkan _password_ tersebut dua kali sebagai konfirmasi. _Password_ bersifat _case-sensitive_.
+- _Developer Password_, diisi dengna _password_ untuk _user DEVELOPER_. Ketikkan _password_ tersebut dua kali sebagai konfirmasi. _Password_ bersifat _case-sensitive_.
 
 ### Primary Database
 
-* *Database Type*, diisi dengan jenis RDBMS yang digunakan untuk menyimpan definisi aplikasi.
-* ~~*Create New Database* (Yes/No), beri tanda cek untuk membuat *database* definisi aplikasi. Hal ini hanya berlaku untuk Firebird. Untuk RDBMS lain, *database* harus sudah dibuat terlebih dahulu menggunakan aplikasi bantu yang disediakan oleh masing-masing RDBMS. Sebaiknya berupa database kosong.~~
-* <span style="color:salmon"> *Host Name* </span>
+- _Database Type_, diisi dengan jenis RDBMS yang digunakan untuk menyimpan definisi aplikasi.
+- _Host Name_, diisi dengan nama host atau nama komputer, misalnya _localhost_ atau _IP Address_ yang telah ditetapkan.
+- _Database (Database Metadata)_, nama _database_ atau _alias_-nya yang akan digunakan sebagai _database_ definisi aplikasi. Buat terlebih dahulu _database_ kosong dengan nama apa saja sesuai keperluan dan dengan ekstensi **.emd** (_lowercase_) atau **.EMD** (_uppercase_) misalnya **namila.emd**. Kemudian gunakan tombol _Browse_ sebelah kanan _edit box_ untuk memilih _file database_ yang telah dibuat.
 
-* ~~*Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Pada Firebird, jika database dibentuk oleh Epigoni, tuliskan nama *file database* yang akan dibentuk lengkap dengan lokasinya. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.~~
+> Catatan: **.emd** (Epigoni Metadata)
 
-* *Database (Database Metadata)*, nama *database* atau *alias*-nya yang akan digunakan sebagai *database* definisi aplikasi. Gunakan tombol *Browse* sebelah kanan *edit box* untuk memudahkan pengisian nama *file database*.
+> Untuk membuat database (firebird) baru, ikuti langkah [berikut](https://firebirdsql.org/manual/isql-create-database.html), atau bisa menggunakan aplikasi pihak ketiga seperti [IBExpert](https://www.ibexpert.net/ibe/), [FlameRobin](http://www.flamerobin.org/), [DBeaver](https://dbeaver.io/), dan sebagainya.
 
 ![Pop-Up Save As](/images/popUpSaveAs.svg)
 
-* *User Name*, diisi dengan nama *user* untuk *login* ke *database* definisi aplikasi yang akan terbentuk/sudah tersedia.
-* *Password*, diisi dengan *password* untuk ke database definisi aplikasi yang akan terbentuk/sudah tersedia.
-* Tombol *Advanced* 
+- _User Name_, diisi dengan nama _user_ untuk _login_ ke _database_.
+- _Password_, diisi dengan _password_ untuk _login_ ke _database_.
+- Tombol _Advanced_, untuk melakukan pengaturan konfigurasi koneksi ke _database_ secara manual atau lebih lanjut.
 
 ![Advanced Parameters](/images/advancedParameters.svg)
 
-Jika *database* definisi aplikasi sudah tersedia, Anda bisa mencoba tes koneksi dengan menggunakan
-tombol *Test Connection* yang tersedia.
+Jika _database_ definisi aplikasi sudah tersedia, Anda bisa mencoba tes koneksi dengan menggunakan
+tombol _Test Connection_.
 
 ![Tombol Test](/images/tombolTest.svg)
 
+Jika tes koneksi berhasil, maka akan muncul dialog seperti berikut.
+
+![Connection Success](/images/connSuccess.svg)
+
 ### Project
 
-* *Project File Name*, diisi dengan nama *file project* yang akan dibuat. Jika Anda menggunakan tombol *Browse* pada *edit box Database Metadata*, maka secara otomatis nama file *project*-nya akan terisi dengan nama dan lokasi yang sama dengan nama *file database* definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu **.epf**.
+- _Project File Name_, diisi dengan nama _file project_ yang akan dibuat. Jika Anda menggunakan tombol _Browse_ pada _edit box Database (Metadata)_, maka secara otomatis nama file _project_-nya akan terisi dengan nama dan lokasi yang sama dengan nama _file database_ definisi aplikasi, hanya dengan ekstensi yang berbeda yaitu **.epf**.
 
 ![epf](/images/projectEpf.svg)
 
-Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni akan membuat *file project* dari aplikasi serta membentuk dan/atau menyiapkan *database* definisi aplikasi. Setelah selesai Epigoni akan membuka *project* tersebut dan menampilkan **Application Info**.
+Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni akan membuat _file project_ dari aplikasi serta membentuk dan/atau menyiapkan _database_ definisi aplikasi. Setelah selesai Epigoni akan membuka _project_ tersebut dan menampilkan **Application Info**.
 
 Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.
 
@@ -71,8 +75,6 @@ Untuk melihat daftar koneksi database yang ada, pada tab Metadata, klik tombol C
 Untuk menambahkan koneksi ke database klik tombol Add. Beri nama koneksi pada edit box Connection Name dan pilih Connection Type dengan jenis RDBMS dari database yang ingin diakses.
 
 Lengkapi parameter dari koneksi seperlunya. Misal isi Database dengan nama database atau alias dari database yang akan diakses, isi User_Name dan Password dengan nama user dan password untuk login ke database tersebut.
-
-
 
 ### Membuat Koneksi Database
 
@@ -110,14 +112,14 @@ Data yang diisikan:
 - Dataset Title, diisi dengan judul dataset.
 - Connection, diisi dengan koneksi database yang akan diakses, dipilih dari daftar koneksi yang sudah dibuat.
 - Command Type, diisi degan memilih salah satu jenis Command Type:
-    - Query, Command Text diisi dengan perintah SQL Select.
-    - Table, Command Text diisi dengan nama tabel.
-    - Stored Procedure, Command Text diisi dengan perintah SQL Select yang mengandung selectable stored procedure.
+  - Query, Command Text diisi dengan perintah SQL Select.
+  - Table, Command Text diisi dengan nama tabel.
+  - Stored Procedure, Command Text diisi dengan perintah SQL Select yang mengandung selectable stored procedure.
 - Update Mode, diisi dengan memilih salah satu mode update:
-    - Key Fields, data set akan diupdate berdasarkan value awal dari satu atau lebih key field yang sebelumnya telah didefinisikan.
-    - Change Fields, data set akan diupdate berdasarkan value awal dari field-field yang diubah nilainya oleh user pengguna aplikasi.
-    - All Fields, data set akan diupdate berdasarkan value awal seluruh field dari data set.
-    - Read Only, data set tidak akan diupdate.
+  - Key Fields, data set akan diupdate berdasarkan value awal dari satu atau lebih key field yang sebelumnya telah didefinisikan.
+  - Change Fields, data set akan diupdate berdasarkan value awal dari field-field yang diubah nilainya oleh user pengguna aplikasi.
+  - All Fields, data set akan diupdate berdasarkan value awal seluruh field dari data set.
+  - Read Only, data set tidak akan diupdate.
 - Update Table, diisi dengan nama tabel yang akan diupdate ketika data set diupdate.
 - Packed Records, diisi dengan jumlah satuan record yang akan di-fetch dari database ketika data dibutuhkan. Jika jumlahnya -1 maka semua record akan di-fetch seluruhnya. Jika nilainya >0 maka ketika dibutuhkan, data di-fetch dengan satuan sebesar jumlah tersebut.
 - Max Blob Size, diisi dengan ukuran maksimal field dengan tipe BLOB (Binary Large Object) dalam satuan KB. Jika nilainya -1, maka tidak ada batasan ukuran.
@@ -156,8 +158,6 @@ Disamping dengan cara diatas, untuk membuat Data Package dari Dataset yang telah
 5. Isikan nama untuk definisi Data Package yang sedang dibuat, tekan tombol OK
 6. Proses membuat definisi Data Package sudah berhasil, tekan tombol OK
 7. Untuk hasilnya bisa dilihat di daftar definisi Data Package, pada tab Metadata, klik tombol Data Package.
-
-
 
 ## Membuat Presentasi
 
@@ -234,7 +234,3 @@ Untuk menggeser item menu ke atas dalam level yang sama.
 #### Down
 
 Untuk menggeser item menu ke bawah dalam level yang sama.
-
-
-
-
