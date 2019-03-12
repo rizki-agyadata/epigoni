@@ -66,7 +66,14 @@ Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni
 
 ![List App.](/images/listApp.svg)
 
-Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.
+~~Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.~~
+
+## Pengaturan Aplikasi
+![New App Icon](/images/newAppIcon.svg)
+
+Pada Epigoni Application Portal, klik kanan pada aplikasi (baru) yang telah dibuat, maka akan tampil "lingkaran" - pengaturan aplikasi seperti pada gambar berikut.
+
+![App Setting](/images/appSetting.svg)
 
 ## Menyiapkan Database
 
