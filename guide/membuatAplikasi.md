@@ -68,13 +68,6 @@ Setelah semua informasi yang diperlukan telah diisi, klik tombol **OK**. Epigoni
 
 ~~Proses pembuatan aplikasi baru telah selesai. Anda bisa memulai pendefinisian aplikasi.~~
 
-## Pengaturan Aplikasi
-![New App Icon](/images/newAppIcon.svg)
-
-Pada Epigoni Application Portal, klik kanan pada aplikasi (baru) yang telah dibuat, maka akan tampil "lingkaran" - pengaturan aplikasi seperti pada gambar berikut.
-
-![App Setting](/images/appSetting.svg)
-
 ## Menyiapkan Database
 
 Sebelum membuat model data, Anda harus membuat koneksi ke database yang akan diakses oleh aplikasi. Sebuah proyek aplikasi Epigoni baru sudah memiliki satu buah koneksi database, yaitu koneksi ke database definisi aplikasi, bernama DEFAULT. Koneksi DEFAULT tidak ada dalam daftar koneksi, tetapi dapat digunakan.

@@ -11,7 +11,8 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' }
+      { text: 'Guide', link: '/guide/' },
+      { text: 'Reference', link: '/reference/' }
     ],
     sidebar: {
       '/guide/': [
@@ -21,6 +22,9 @@ module.exports = {
         'presentasi',
         'membuatAplikasi',
         'membuatAplikasi-Versi-1.2'
+      ],
+      '/reference/': [
+        ''
       ],
       // fallback
       '/': [
