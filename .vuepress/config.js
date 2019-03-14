@@ -24,7 +24,8 @@ module.exports = {
         'membuatAplikasi-Versi-1.2'
       ],
       '/reference/': [
-        ''
+        '',
+        'appPortal'
       ],
       // fallback
       '/': [
