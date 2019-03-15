@@ -4,10 +4,10 @@ Portal Aplikasi (Aplication Portal) adalah beranda di mana aplikasi Epigoni dibu
 
 ![Epigoni Exe](/images/epigoniExe.svg)
 
-![App Portal Blank](/images/appPortalBlank.svg)
+![App Portal Blank](/images/appPortalArea.svg)
 
 Aplikasi yang dibuat atau dipasang bisa lebih dari satu aplikasi dan tidak harus berkaitan satu sama lainnya.
 
-![App Portal List](/images/appPortalList.svg)
+![App Portal List](/images/appPortalListSample.png)
 
 
