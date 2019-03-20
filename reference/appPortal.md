@@ -10,4 +10,16 @@ Aplikasi yang dibuat atau dipasang bisa lebih dari satu aplikasi dan tidak harus
 
 ![App Portal List](/images/appPortalListSample.png)
 
+## Register Application
 
+![Button Reg. App.](/images/btnRegApp.svg)
+
+Menu ini adalah untuk mendaftarkan aplikasi Epigoni dengan membuka file ".epf".
+
+![Open .epf](/images/openEpf.svg)
+
+## Create New Application
+
+![Button Create New App.](/images/btnCreateApp.svg)
+
+Menu ini adalah untuk membuat aplikasi Epigoni baru.
