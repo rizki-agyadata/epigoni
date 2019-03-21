@@ -22,4 +22,27 @@ Menu ini adalah untuk mendaftarkan aplikasi Epigoni dengan membuka file ".epf".
 
 ![Button Create New App.](/images/btnCreateApp.svg)
 
-Menu ini adalah untuk membuat aplikasi Epigoni baru.
+Menu ini adalah untuk membuat aplikasi Epigoni baru. Berikut adalah tampilan form yang akan tampil untuk membuat aplikasi baru.
+
+![Form Create New App.](/images/formCreateNewApp.svg)
+
+## Documentation
+
+![Btn Doc.](/images/btnDoc.png)
+
+~~Link menuju website dokumentasi Epigoni~~
+
+## About Epigoni
+
+![Btn About Epigoni](/images/btnAbout.png)
+
+Informasi tentang Epigoni yang digunakan.
+
+## Skins
+
+Menu ini adalah untuk mengubah tema tampilan Epigoni. Tema yang tersedia adalah sebagai berikut.
+
+![Color List](/images/colorList.png)
+
+
+
