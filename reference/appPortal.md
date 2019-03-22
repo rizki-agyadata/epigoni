@@ -43,6 +43,3 @@ Informasi tentang Epigoni yang digunakan.
 Menu ini adalah untuk mengubah tema tampilan Epigoni. Tema yang tersedia adalah sebagai berikut.
 
 ![Color List](/images/colorList.png)
-
-
-

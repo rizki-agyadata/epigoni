@@ -25,7 +25,8 @@ module.exports = {
       ],
       '/reference/': [
         '',
-        'appPortal'
+        'appPortal',
+        'menuPengaturanAplikasi'
       ],
       // fallback
       '/': [
