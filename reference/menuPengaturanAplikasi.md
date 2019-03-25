@@ -10,21 +10,37 @@ Klik kanan pada aplikasi, maka kemudian akan tampil menu pengaturan aplikasi sep
 
 ![Button Run](/images/btnRun.png)
 
+Menu **Run** adalah untuk menjalankan aplikasi Epigoni. 
+
 ## Develop
 
 ![Button Develop](/images/btnDevelop.png)
+
+Menu **Develop** adalah untuk masuk ke mode pengembangan aplikasi. 
 
 ## Config
 
 ![Button Config](/images/btnConfig.png)
 
+Menu **Config** adalah untuk melakukan pengaturan konfigurasi apikasi Epigoni.
+
+![Form Config](/images/formConfig.png)
+
 ## Project
 
 ![Button Project](/images/btnProject.png)
 
+Menu **Project** adalah untuk melakukan pengaturan _project file_ Epigoni.
+
+![Project Editor - System](/images/projectFileEditor_System.png)
+
+![Project Editor - Application](/images/projectFileEditor_App.png)
+
 ## Clone
 
 ![Button Clone](/images/btnClone.png)
+
+Menu **Clone** adalah untuk melakukan klon (menggandakan) aplikasi Epigoni.
 
 ## Edit
 
